@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200.300,400,500,,600,700"/>
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/1d73357de3.js" crossorigin="anonymous"></script>
+
+    <style>
+        @media screen and (min-width:701px) and (max-width:1000px) {
+      /* Here Write all the necessery styles for Medium Screen size  */
+      
+     
+    }
+
+    @media screen and (min-width:100px) and (max-width:700px) {
+      /* Here Write all the necessery styles for Small Screen size  */
+      header,footer{
+        display: none;
+      }
+      .cart{
+        display: block !important;
+      }
+      #cart_1stsection ,.cart_2ndsection,h1{
+        width: 100% !important;
+        padding: 10px !important;
+      }
+      table{
+        font-size: 11px;
+        /* border: 1px solid; */
+        width: 90% !important;
+      }
+      #divbutton_in {
+        font-size: 12px !important;
+        margin: 4px;
+      }
+      .priceSection{
+        justify-content: start !important;
+      }
+      .priceSection>div{
+        margin: 5px;
+      }
+     
+    }
+        /* ----------apply coupne and add sub and remove */
+        .cart{
+            width: 80%;
+            margin: auto;
+        }
+
+        #divbutton_in {
+            background: #333;
+            padding: 5px 14px;
+            font-size: 15px;
+            border: none;
+            color: white;
+            margin-right: 4px;
+            border-radius: 20px;
+        }
+        #divbutton_in:hover{
+            background-color: #DD0285;
+        }
+        button#disc {
+            margin-bottom: 10px;
+            padding: 11px;
+            color: white;
+            background: #333;
+            border: none;
+        }
+        button#disc:hover{
+            background-color: #DD0285;
+        }
+/* -------------------------------------------------------------------- */
+        div#cart_1stsection {
+            margin: 20px;
+        }
+        .cart {
+            display: flex;
+        }
+
+        .cart_2ndsection {
+            border: 2px solid rgba(225, 218, 218, 0.451);
+            padding: 40px;
+        }
+
+        #shipping,
+        #discnt,
+        .checkout {
+            padding: 10px 20px;
+            width: 360px;
+            margin-bottom: 20px;
+        }
+
+        /* select {
+            padding: 10px 20px;
+            width: 360px;
+            margin: 10px 0px;
+        } */
+
+        #zip {
+            width: 342px;
+            padding: 9px;
+        }
+        select#Country,#State{
+            width: 360px;
+            padding: 11px;
+            margin: 10px 0px;
+        }
+        input#discountcode {
+            width: 200px;
+            padding: 10px;
+        }
+
+        label {
+            margin-top: 20px;
+        }
+
+        form {
+            margin: 10px 0px;
+        }
+
+        .priceSection {
+            display: flex;
+            justify-content: space-between;
+            /* margin: 10px 0px; */
+        }
+
+        .checkout {
+            background-color: #DD0285;
+            color: white;
+            font-size: 16px;
+            border: none;
+        }
+
+        .checkout:hover {
+            background-color: #444;
+            /* color: white; */
+            font-size: 16px;
+            border: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        /* td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        } */
+
+        * {
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        header {
+            margin-bottom: .5rem;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+            align-items: center;
+        }
+
+        .control {
+            margin: 10px 0px;
+            border: 1px solid #e6e6e6;
+            border-radius: 2px;
+            color: #b3b3b3;
+        }
+
+        #cat {
+            padding: 10px 100px 10px 5px;
+            border: transparent;
+            color: #b3b3b3;
+        }
+
+        #search {
+            padding: 10px 100px 10px 5px;
+            border: transparent;
+            color: #b3b3b3;
+        }
+
+        .fa-magnifying-glass {
+            color: white;
+        }
+
+        .search-btn {
+            padding: 11px 16px;
+            background-color: #dd0285;
+            border-color: transparent;
+            border-radius: 0 2px 2px 0;
+        }
+
+        ::placeholder {
+            color: #b3b3b3;
+            opacity: 1;
+        }
+
+
+        .header-links {
+            display: flex;
+        }
+
+        .wishlist-div {
+            margin-right: 10px;
+        }
+
+        .wishlist {
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        .fa-heart {
+            font-size: 18px;
+            color: black;
+        }
+
+        .user {
+            padding: 8px;
+            background-color: white;
+            border: 1px solid #d9d9d9;
+        }
+
+        .fa-user {
+            font-size: 18px;
+            color: black;
+        }
+
+        .btn {
+            background-color: white;
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: #dd0285;
+            color: white;
+        }
+
+        .loginRegisterDropdown {
+            list-style: none;
+            background-color: white;
+            width: 5%;
+            text-align: left;
+            padding: 10px 40px 10px 10px;
+            display: none;
+            position: absolute;
+            margin: 3rem 0 0 3rem;
+            box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+        }
+
+        .loginRegisterDropdown li {
+            margin: 7px;
+        }
+
+        .loginRegisterDropdown li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .loginRegisterDropdown li a:hover {
+            color: #dd0285;
+        }
+
+        .nav-menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-menu ul li {
+            list-style: none;
+        }
+
+        .nav-bar {
+            width: 100%;
+            height: 51px;
+            background: #dd0285;
+        }
+
+        .nav-menu {
+            width: 84%;
+            margin: auto;
+        }
+
+
+        .nav-links {
+            float: left;
+            position: relative;
+        }
+
+        .nav-menu ul li a {
+            display: block;
+            padding: 16px 26px;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .nav-menu ul li div {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            width: max-content;
+
+        }
+
+        .nav-menu ul li:hover div {
+            display: flex;
+        }
+
+        .nav-menu ul li div ul {
+            padding-left: 10px;
+            width: max-content;
+        }
+
+        .nav-menu ul li div ul li p {
+            font-size: 13px;
+            padding: 0px 6px;
+            margin: 5px 0px;
+        }
+
+        .nav-menu ul li div ul li:first-child p {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .nav-menu ul li div img {
+            width: 50%;
+            height: 70%;
+            background-size: cover;
+            margin-left: 10px;
+        }
+
+        .nav-cart {
+            padding-top: 15px;
+            width: 90%;
+        }
+
+        .nav-cart a {
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            float: right;
+            color: white;
+        }
+
+        .fa-bag-shopping {
+            padding-right: 20px;
+        }
+
+        /* -----------footer------------------ */
+        /* ------------footer */
+        footer {
+            color: white;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .footer-main-aj {
+            /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+            background-color: #232323;
+        }
+
+        .footer-main-aj a {
+            text-decoration: none;
+            color: #a2a0a0;
+        }
+
+        .footer-bottom-2-aj {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 34px;
+            margin: auto;
+            font-weight: 100;
+            font-size: medium;
+            background-color: rgba(0, 0, 0, 0.65);
+            border-top: 1px rgb(76, 74, 74) solid;
+            color: #a5a7a0;
+            font-size: 13px;
+        }
+
+        .footer-bottom-1-aj {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px rgb(76, 74, 74) solid;
+            padding: 10px 0;
+        }
+
+        .footer-bottom-1-aj .footer-right-signup {
+            display: flex;
+
+            align-items: center;
+            gap: 30px;
+        }
+
+        .signup-buttons-place {
+            display: flex;
+            align-items: center;
+        }
+
+        .enter-signup-text {
+            height: 50px;
+            width: 300px;
+            border: none;
+            color: #999999;
+            box-sizing: border-box;
+            padding-left: 10%;
+            font-size: 18px;
+        }
+
+        ::placeholder {
+            font-size: 16px;
+        }
+
+        .enter-signup-button {
+            background-color: #dd0285;
+            font-size: 1rem;
+            color: whitesmoke;
+            font-weight: 700;
+            width: 100px;
+            border: none;
+            height: 50px;
+        }
+
+        .footer-right-signup div:first-child {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        .footer-top {
+            margin: auto;
+            padding-top: 1%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+        }
+
+        .footer-main-aj li {
+            list-style: circle;
+            list-style-position: inside;
+            margin-bottom: 10px;
+        }
+
+        .footer-main-aj li:hover,
+        .footer-main-aj a:hover,
+        .categories span:hover {
+            color: #dd0285;
+        }
+
+        .socials-wrap .links-contact {
+            display: flex;
+
+            gap: 5%;
+        }
+
+        .li-social a {
+            display: block;
+            background-color: #dd0285;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 10px 0;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+        }
+
+        .links-contact li {
+            list-style: none;
+        }
+
+        .links li a span,
+        .phone,
+        .time {
+            font-size: medium;
+            color: #999999;
+        }
+
+        .footer-block-title {
+            display: inline-block;
+            padding-bottom: 10px;
+            margin: 10px 10px 10px 48px;
+            border-bottom: 2px dashed #dd0285;
+        }
+
+        .footer-main-aj h3 {
+            font-size: medium;
+        }
+
+        .divide {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: baseline;
+            gap: 10vh;
+        }
+
+        .fa {
+            color: white;
+        }
+
+        .phone:hover,
+        .time:hover {
+            color: #999999 !important;
+        }
+
+        .phone,
+        .time {
+            margin: 10px 0 !important;
+        }
+
+        .footer-block-title {
+            font-size: 22px;
+        }
+
+        .footer-block-title h3 {
+            margin: 5px;
+        }
+
+        .links {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        tbody tr td{
+            text-align: center;
+        }
+
+        thead tr th{
+            padding: 0px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a href="../index.html">
+                <img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="logo" />
+            </a>
+            <div class="control">
+                <select name="select-box-cat" id="cat">
+                    <option value="">All Category</option>
+                    <option value="Make up">Make up</option>
+                    <option value="Skin">Skin</option>
+                    <option value="Hair">Hair</option>
+                    <option value="Personal Care">Personal Care</option>
+                    <option value="Mom & Baby Care">Mom & Baby Care</option>
+                    <option value="Fragrance">Fragrance</option>
+                    <option value="Ayurveda">Ayurveda</option>
+                </select>
+                <span>|</span>
+                <input type="text" id="search" placeholder="Enter Your Search..." />
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="header-links">
+                <div class="wishlist-div">
+                    <a href="#"><i class="fa-solid fa-heart wishlist btn"></i></a>
+                </div>
+                <div class="user-acc">
+                    <i class="fa-solid fa-user user btn"></i>
+                    <span>My Account</span>
+                </div>
+                <ul class="loginRegisterDropdown">
+                    <li>
+                        <a href="./webpage-login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="./webpage-register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <div class="nav-menu">
+                <ul>
+                    <li class="nav-links">
+                        <a href="./webpage-makeup.html">MAKEUP</a>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p>FACE</p>
+                                </li>
+                                <li>
+                                    <p>BB Cream</p>
+                                </li>
+                                <li>
+                                    <p>Blush</p>
+                                </li>
+                                <li>
+                                    <p>Bronzer</p>
+                                </li>
+                                <li>
+                                    <p>CC Cream</p>
+                                </li>
+                                <li>
+                                    <p>Contour</p>
+                                </li>
+                                <li>
+                                    <p>Concealer</p>
+                                </li>
+                                <li>
+                                    <p>Compact & Powder</p>
+                                </li>
+                                <li>
+                                    <p>Face Primer</p>
+                                </li>
+                                <li>
+                                    <p>Foundation</p>
+                                </li>
+                                <li>
+                                    <p>Highlighters</p>
+                                </li>
+                                <li>
+                                    <p>Loose Powder</p>
+                                </li>
+                                <li>
+                                    <p>Makeup Kits</p>
+                                </li>
+                                <li>
+                                    <p>Makeup Remover</p>
+                                </li>
+                                <li>
+                                    <p>Setting Spray</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>EYE</p>
+                                </li>
+                                <li>
+                                    <p>Contact Lenses</p>
+                                </li>
+                                <li>
+                                    <p>Eye Kit</p>
+                                </li>
+                                <li>
+                                    <p>Eyeliner</p>
+                                </li>
+                                <li>
+                                    <p>Eye Shadow</p>
+                                </li>
+                                <li>
+                                    <p>Eye Primer</p>
+                                </li>
+                                <li>
+                                    <p>Eye-Palettes</p>
+                                </li>
+                                <li>
+                                    <p>Eye Makeup Remover</p>
+                                </li>
+                                <li>
+                                    <p>Eye Brow Enhancers</p>
+                                </li>
+                                <li>
+                                    <p>False Eyelashes</p>
+                                </li>
+                                <li>
+                                    <p>Kajal</p>
+                                </li>
+                                <li>
+                                    <p>Mascara</p>
+                                </li>
+                                <li>
+                                    <p>Under Eye Concealer</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>LIPS</p>
+                                </li>
+                                <li>
+                                    <p>Lipstick</p>
+                                </li>
+                                <li>
+                                    <p>Liquid Lipstick</p>
+                                </li>
+                                <li>
+                                    <p>Lip Liner</p>
+                                </li>
+                                <li>
+                                    <p>Lip Gloss</p>
+                                </li>
+                                <li>
+                                    <p>Lip Balm</p>
+                                </li>
+                                <li>
+                                    <p>Lip Crayon</p>
+                                </li>
+                                <li>
+                                    <p>Lip Stain</p>
+                                </li>
+                                <li>
+                                    <p>Lip Plumper</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>NAILS</p>
+                                </li>
+                                <li>
+                                    <p>Manicure & Pedicure Kits</p>
+                                </li>
+                                <li>
+                                    <p>Nail Polish</p>
+                                </li>
+                                <li>
+                                    <p>Nail Care</p>
+                                </li>
+                                <li>
+                                    <p>Nail Polish Sets</p>
+                                </li>
+                                <li>
+                                    <p>Nail Art Kits</p>
+                                </li>
+                                <li>
+                                    <p>Nail Polish Remover</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>TOOLS BRUSHES</p>
+                                </li>
+                                <li>
+                                    <p>Blush Brush</p>
+                                </li>
+                                <li>
+                                    <p>Eyelash Curlers</p>
+                                </li>
+                                <li>
+                                    <p>Eye Brush</p>
+                                </li>
+                                <li>
+                                    <p>Face Brush</p>
+                                </li>
+                                <li>
+                                    <p>Lip Brush</p>
+                                </li>
+                                <li>
+                                    <p>Makeup Pouches</p>
+                                </li>
+                                <li>
+                                    <p>Mirrors</p>
+                                </li>
+                                <li>
+                                    <p>Sponges & Applicators</p>
+                                </li>
+                                <li>
+                                    <p>Sharpeners</p>
+                                </li>
+                                <li>
+                                    <p>Tweezers</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="./webpage-skin.html">SKIN</a>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p>EYE CARE</p>
+                                </li>
+                                <li>
+                                    <p>Dark Circles</p>
+                                </li>
+                                <li>
+                                    <p>Eye Contour Care</p>
+                                </li>
+                                <li>
+                                    <p>Eye Cream</p>
+                                </li>
+                                <li>
+                                    <p>Eye Masks</p>
+                                </li>
+                                <li>
+                                    <p>Eye Serums</p>
+                                </li>
+                                <li>
+                                    <p>Puffiness</p>
+                                </li>
+                                <li>
+                                    <p>Under Eye Creams</p>
+                                </li>
+                                <li>
+                                    <p>Under Eye Wrinkles</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>FACE CARE</p>
+                                </li>
+                                <li>
+                                    <p>Anti- Ageing Creams</p>
+                                </li>
+                                <li>
+                                    <p>Bleach Creams</p>
+                                </li>
+                                <li>
+                                    <p>Brightening Cream</p>
+                                </li>
+                                <li>
+                                    <p>Face Wash</p>
+                                </li>
+                                <li>
+                                    <p>Facial Wipes</p>
+                                </li>
+                                <li>
+                                    <p>Face Oil</p>
+                                </li>
+                                <li>
+                                    <p>Face Cleansers</p>
+                                </li>
+                                <li>
+                                    <p>Facial Kits</p>
+                                </li>
+                                <li>
+                                    <p>Face Tools</p>
+                                </li>
+                                <li>
+                                    <p>Moisturizer</p>
+                                </li>
+                                <li>
+                                    <p>Mask & Peels</p>
+                                </li>
+                                <li>
+                                    <p>Serum</p>
+                                </li>
+                                <li>
+                                    <p>Toner & Astringents</p>
+                                </li>
+                                <li>
+                                    <p>Cleansing Creams</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>BODY CARE</p>
+                                </li>
+                                <li>
+                                    <p>All Cream</p>
+                                </li>
+                                <li>
+                                    <p>Body Moisturizers</p>
+                                </li>
+                                <li>
+                                    <p>Body Toners</p>
+                                </li>
+                                <li>
+                                    <p>Body Sun Care</p>
+                                </li>
+                                <li>
+                                    <p>Brightening Lotion</p>
+                                </li>
+                                <li>
+                                    <p>Dark Circles & Wrinkles</p>
+                                </li>
+                                <li>
+                                    <p>Day Cream</p>
+                                </li>
+                                <li>
+                                    <p>Foot Cream</p>
+                                </li>
+                                <li>
+                                    <p>Hair Remover Cream</p>
+                                </li>
+                                <li>
+                                    <p>Hand Creams</p>
+                                </li>
+                                <li>
+                                    <p>Hands & Feet</p>
+                                </li>
+                                <li>
+                                    <p>Kits & Combos</p>
+                                </li>
+                                <li>
+                                    <p>Night Cream</p>
+                                </li>
+                                <li>
+                                    <p>Neck Creams</p>
+                                </li>
+                            </ul>
+
+                            <img style="width: 58%;" src="https://www.beautybebo.com/pub/media/mega-menu/SKIN_cATA.jpg"
+                                alt="">
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="./webpage-hair.html">HAIR</a>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p>HAIR CARE</p>
+                                </li>
+                                <li>
+                                    <p>Color Protection</p>
+                                </li>
+                                <li>
+                                    <p>Dandruff</p>
+                                </li>
+                                <li>
+                                    <p>Dry Shampoo</p>
+                                </li>
+                                <li>
+                                    <p>Gels & Waxes</p>
+                                </li>
+                                <li>
+                                    <p>Hair Spray</p>
+                                </li>
+                                <li>
+                                    <p>Hair Color/ Dye</p>
+                                </li>
+                                <li>
+                                    <p>Hair Creams & Masks </p>
+                                </li>
+                                <li>
+                                    <p>Hair Styling</p>
+                                </li>
+                                <li>
+                                    <p>Hairfall & Thinning </p>
+                                </li>
+                                <li>
+                                    <p>Straighteners </p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>HAIR LOSS</p>
+                                </li>
+                                <li>
+                                    <p>Conditioner</p>
+                                </li>
+                                <li>
+                                    <p>Hair Oil</p>
+                                </li>
+                                <li>
+                                    <p>Hair Serum</p>
+                                </li>
+                                <li>
+                                    <p>Hair Growth Solutions</p>
+                                </li>
+                                <li>
+                                    <p>Shampoo</p>
+                                </li>
+                            </ul>
+
+                            <img style="width: 72%;" src="https://www.beautybebo.com/pub/media/mega-menu/hair_cata.jpg"
+                                alt="headandsholder">
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="./webpage-personalcare.html">PERSONAL CARE</a>
+                        <div style="width: 500%;">
+                            <ul>
+                                <li>
+                                    <p>BATH & BODY</p>
+                                </li>
+                                <li>
+                                    <p>Body Cleansers</p>
+                                </li>
+                                <li>
+                                    <p>Body Massage Oil</p>
+                                </li>
+                                <li>
+                                    <p>Body Wash</p>
+                                </li>
+                                <li>
+                                    <p>Creams</p>
+                                </li>
+                                <li>
+                                    <p>Essential Oils</p>
+                                </li>
+                                <li>
+                                    <p>Foot Cream</p>
+                                </li>
+                                <li>
+                                    <p>Scrubs & Exfoliants</p>
+                                </li>
+                                <li>
+                                    <p>Ubtan & Face Packs</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>BATHING ACCESSORIES</p>
+                                </li>
+                                <li>
+                                    <p>Bath Brushes</p>
+                                </li>
+                                <li>
+                                    <p>Loofahs</p>
+                                </li>
+                                <li>
+                                    <p>Shower Caps</p>
+                                </li>
+                                <li>
+                                    <p>Sponges</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>BATH & SHOWER</p>
+                                </li>
+                                <li>
+                                    <p>Body Soaps</p>
+                                </li>
+                                <li>
+                                    <p>Shower Gel</p>
+                                </li>
+                            </ul>
+
+                            <img src="https://www.beautybebo.com/pub/media/mega-menu/personal_cata.jpg"
+                                alt="personalcare">
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="./webpage-momBaby.html">MOM & BABY CARE</a>
+                        <div style="width: 400%;">
+                            <ul>
+                                <li>
+                                    <p>BABY CARE</p>
+                                </li>
+                                <li>
+                                    <p>Bath Time</p>
+                                </li>
+                                <li>
+                                    <p>Diapers</p>
+                                </li>
+                                <li>
+                                    <p>Lotions & Creams</p>
+                                </li>
+                                <li>
+                                    <p>Oils</p>
+                                </li>
+                                <li>
+                                    <p>Powder</p>
+                                </li>
+                                <li>
+                                    <p>Shampoo</p>
+                                </li>
+                                <li>
+                                    <p>Soaps</p>
+                                </li>
+                                <li>
+                                    <p>Sterilizer & Cleaners</p>
+                                </li>
+                                <li>
+                                    <p>Rash Cream</p>
+                                </li>
+                                <li>
+                                    <p>Wipes</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>MOM CARE</p>
+                                </li>
+                                <li>
+                                    <p>Lotions & Creams</p>
+                                </li>
+                                <li>
+                                    <p>Personal Care</p>
+                                </li>
+                            </ul>
+
+                            <img style="width:65%;"
+                                src="https://www.beautybebo.com/pub/media/mega-menu/mom_baby_cata.jpg" alt="babycare">
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="./webpage-fregrance.html">FRAGRANCE</a>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p>Perfumes</p>
+                                </li>
+                                <li>
+                                    <p>Deodorants roll ons</p>
+                                </li>
+                                <li>
+                                    <p>Body Mist/Spray</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">AYURVEDA</a>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p>NATURAL SKIN CARE</p>
+                                </li>
+                                <li>
+                                    <p>Body Wash</p>
+                                </li>
+                                <li>
+                                    <p>Body Lotion</p>
+                                </li>
+                                <li>
+                                    <p>Cleansers</p>
+                                </li>
+                                <li>
+                                    <p>Cream</p>
+                                </li>
+                                <li>
+                                    <p>Eye Care</p>
+                                </li>
+                                <li>
+                                    <p>Face Wash</p>
+                                </li>
+                                <li>
+                                    <p>Gel</p>
+                                </li>
+                                <li>
+                                    <p>Lip Care</p>
+                                </li>
+                                <li>
+                                    <p>Mask</p>
+                                </li>
+                                <li>
+                                    <p>Pack</p>
+                                </li>
+                                <li>
+                                    <p>Scrub</p>
+                                </li>
+                                <li>
+                                    <p>Sun Protection</p>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li>
+                                    <p>NATURAL HAIR CARE</p>
+                                </li>
+                                <li>
+                                    <p>Conditioner</p>
+                                </li>
+                                <li>
+                                    <p>Hair Oils</p>
+                                </li>
+                                <li>
+                                    <p>Hair Serum</p>
+                                </li>
+                                <li>
+                                    <p>Hair Gel</p>
+                                </li>
+                                <li>
+                                    <p>Shampoo</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-cart">
+                <a href="./webpage-cart.html"><i class="fa-solid fa-bag-shopping"></i>MY CART</a>
+            </div>
+        </div>
+    </header>
+    <div class="cart">
+        <h1>SHOPPING CART</h1>
+    </div>
+    <div class="cart" id="cart">
+        <div id="cart_1stsection" style="width:70% ;">
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ITEMS</th>
+                            <th>NAME</th>
+                            <th>PRICE</th>
+                            <th>QTY</th>
+                            <th>SUBTOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataAppend">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="cart_2ndsection" style="width:30% ;">
+            <h1>SUMMARY</h1>
+            <div class="priceSection">
+                <div>
+                    <p>Subtotal</p>
+                </div>
+                <div>
+                    <p id="totalcost">0</p>
+                </div>
+            </div>
+            <div class="priceSection">
+                <div>
+                    <p>Shipping (Best Way- Max 7 Business Days)</p>
+                </div>
+                <div>
+                    <p id="shippingCost"></p>
+                </div>
+            </div>
+            <div class="priceSection">
+                <div>
+                    <p>Order Total Incl. GST</p>
+                </div>
+                <div>
+                    <p id="gst">0</p>
+                </div>
+            </div>
+            <button id="discnt" onclick="demoDisplay1()">APPLY DISCOUNT CODE</button>
+            <br>
+            <div id="discount" style="display:none;">
+                <input type="text" name="" id="discountcode" placeholder="Enter discount code">
+                <BR></BR>
+                <button id="disc">APPLY DISCOUNT</button>
+
+            </div>
+            <div>
+
+                <button class="checkout" onclick="proceed()">PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-main-aj">
+            <div class="footer-top">
+                <div class="divide">
+                    <div class="one">
+                        <div class="footer-block-title">
+                            <h3>CONTACT INFO</h3>
+                        </div>
+                        <div class="list-contact-aj">
+                            <ul class="links-contact">
+                                <li class="phone">(+91) 97990 30777</li>
+                                <li class="mail">
+                                    <a href="mailto:support@beautybebo.com">support@beautybebo.com</a><br><a
+                                        href="mailto:sales@beautybebo.com">sales@beautybebo.com
+                                    </a>
+                                </li>
+                                <li class="time">Open time: 10:00AM - 7:00PM</li>
+                            </ul>
+                        </div>
+                        <div class="socials-wrap">
+                            <ul class="links-contact">
+                                <li class="li-social facebook-social">
+                                    <a title="Facebook" href="https://www.facebook.com/BeautyBebo-339715696750230/"
+                                        target="_blank"><span class="fa fa-facebook icon-social"
+                                            aria-hidden="true"></span></a>
+                                </li>
+                                <li class="li-social pinterest-social">
+                                    <a title="Instagram" href="https://www.instagram.com/beautybeboofficial/"
+                                        target="_blank"><span class="fa fa-instagram icon-social"
+                                            aria-hidden="true"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="two">
+                        <div class="footer-block-title">
+                            <h3>QUICK LINKS</h3>
+                        </div>
+                        <div class="footer-block-content">
+                            <ul class="links">
+                                <li><a href="./pages/aboutus.html">About us</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
+                                <li>
+                                    <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+                                </li>
+                                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                                <li>
+                                    <a href="/return-policy">Return and Refund Policy</a>
+                                </li>
+                                <li><a href="/shipping-policy">Shipping Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="divide">
+                    <div class="three">
+                        <div class="footer-block-title">
+                            <h3>CUSTOMER</h3>
+                        </div>
+                        <div class="footer-block-content">
+                            <ul class="links">
+                                <li><a href="/customer/account/">My Account</a></li>
+                                <li><a href="/track-order/">Track your Order</a></li>
+                                <li><a href="/order-return">Order Returns</a></li>
+                                <li><a href="/wishlist/">Wishlist</a></li>
+                                <li><a href="/blog/">News &amp; Events</a></li>
+                                <li><a href="./pages/faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="four">
+                        <div class="footer-block-title">
+                            <h3>CATEGORIES</h3>
+                        </div>
+                        <div class="footer-block-content categories">
+                            <ul class="links">
+                                <li>
+                                    <a
+                                        href="https://www.beautybebo.com/makeup.html?___store=default"><span>Makeup</span></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.beautybebo.com/skin.html?___store=default"><span>Skin</span></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.beautybebo.com/hair.html?___store=default"><span>Hair</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.beautybebo.com/personal-care.html?___store=default"><span>Personal
+                                            Care</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.beautybebo.com/mom-baby-care.html?___store=default"><span>Mom
+                                            &amp; Baby Care</span></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.beautybebo.com/fragrance.html?___store=default"><span>Fragrance</span></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.beautybebo.com/ayurveda.html?___store=default"><span>Ayurveda</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-1-aj">
+                <div class="footer-payment_img">
+                    <img src="https://www.beautybebo.com/pub/media/wysiwyg/payment.png" alt="">
+                </div>
+                <div class="footer-right-signup">
+                    <div><span>Signup For Newsletter</span></div>
+                    <div class="signup-buttons-place">
+                        <div>
+                            <input type="text" class="enter-signup-text" placeholder="Signup For Newsletter">
+                        </div>
+
+                        <div>
+                            <input type="button" value="Subscribe" class="enter-signup-button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-2-aj">Made by Ramanpreet Singh,Manoj Kumar, Sourav Partab Singh & Manish Verma.
+            </div>
+        </div>
+        <!--footer-main-ajn-->
+    </footer>
+
+</body>
+
+</html>
+<script>
+    var booleanaddress= false;
+    function proceed(){
+        if(booleanaddress==false){
+            window.location.href="webpage-checkout.html"
+        }else{
+            alert("Please Fill Shipping Address")
+        }
+    }
+
+    var cartarr = JSON.parse(localStorage.getItem("cartarr")) || [];
+    // console.log(cartarr.length);
+
+    if (cartarr.length == 0) {
+        // window.location.reload;
+        document.getElementById("cart").textContent = " ";
+        var div = document.createElement("div");
+
+        // var h1 = document.createElement("h1");
+        // h1.textContent="SHOPPING CART";
+
+        var p1 = document.createElement("p");
+        p1.textContent = "You have no items in your shopping cart.";
+
+        var p2 = document.createElement("p");
+        p2.textContent = "Click here to continue shopping.";
+        document.getElementById("cart").append(div);
+        div.append(p1, p2)
+    }
+    else {
+        
+        var d1 = true;
+        var d2 = true;
+        function demoDisplay() {
+            booleanaddress=!booleanaddress;
+            if (d1 == true) {
+                document.getElementById("myP1").style.display = "block";
+                d1 = !d1;
+            } else {
+                document.getElementById("myP1").style.display = "none";
+                d1 = !d1;
+            }
+        }
+
+        function demoDisplay1() {
+            if (d2 == true) {
+                document.getElementById("discount").style.display = "block";
+                d2 = !d2;
+            } else {
+                document.getElementById("discount").style.display = "none";
+                d2 = !d2;
+            }
+        }
+
+        DisplayCartItems();
+
+        function DisplayCartItems() {
+            var totalprice = 0;
+
+            document.querySelector("tbody").textContent="";
+
+            var maindiv = document.getElementById("dataAppend");
+                // maindiv.style.margin="100px";
+
+            cartarr.map(function(ele,i){
+                var divtemp = document.createElement("tr");
+
+                var imgtd = document.createElement("td");
+                var img = document.createElement("img");
+                img.src = ele.img;
+                img.style.width = "40%"
+                imgtd.append(img);
+
+                var name = document.createElement("td");
+                name.textContent = ele.productname;
+
+                var price = document.createElement("td");
+                price.textContent = ele.price;
+
+                var tempprice = +ele.price;
+                var tempcount=+ele.count;
+                var subtotaltemp= tempprice*tempcount;
+                totalprice += subtotaltemp;
+                if(totalprice>=500){
+                    document.getElementById("gst").textContent=totalprice;
+                    document.getElementById("shippingCost").textContent = 0;
+                }else{
+                    document.getElementById("gst").textContent=totalprice+55;
+                    document.getElementById("shippingCost").textContent = 55;
+                }
+                document.getElementById("totalcost").textContent=totalprice;
+
+// ------
+                var quantity = document.createElement("td");
+                quantity.textContent = ele.count;
+
+                var total = document.createElement("td");
+                total.textContent = subtotaltemp;
+
+                
+
+
+                var divbutton=document.createElement("div");
+                divbutton.style.margin="20px 0px";
+
+
+                var divbuttonRemove=document.createElement("button");
+                divbuttonRemove.textContent="Remove From Cart"
+                divbuttonRemove.setAttribute("id","divbutton_in");
+                
+                divbuttonRemove.addEventListener("click", removeCartItem);
+
+                var divbutton_increase=document.createElement("button");
+                divbutton_increase.textContent="+";
+                divbutton_increase.setAttribute("id","divbutton_in");
+
+                divbutton_increase.addEventListener("click", addproduct);
+                var quantity = document.createElement("td");
+
+                function addproduct(){
+                    
+                    tempcount+=1;
+                    quantity.textContent = tempcount;
+                    ele.count=tempcount;
+                    subtotaltemp=tempprice*tempcount;
+                    total.textContent = subtotaltemp;
+                    totalprice+=tempprice;
+                    console.log(totalprice)
+
+                    if(totalprice>=500){
+                    document.getElementById("gst").textContent=totalprice;
+                    document.getElementById("shippingCost").textContent = 0;
+                    }else{
+                        document.getElementById("gst").textContent=totalprice+55;
+                        document.getElementById("shippingCost").textContent = 55;
+                    }
+                    document.getElementById("totalcost").textContent=totalprice;
+
+
+                    localStorage.setItem("cartarr",JSON.stringify(cartarr));
+
+                    // DisplayCartItems();
+
+                }
+
+                var divbutton_Decrese=document.createElement("button");
+                divbutton_Decrese.textContent="-";
+                divbutton_Decrese.setAttribute("id","divbutton_in");
+
+                divbutton_Decrese.addEventListener("click",subproduct);
+
+                function subproduct(){
+                    if(tempcount===1){
+                        // countcost(i);
+                        removeCartItem();
+                        window.location.reload;
+                        // localStorage.setItem("cartarr",JSON.stringify(cartarr));
+
+                        // DisplayCartItems();
+                    }else{
+                        tempcount-=1;
+                        quantity.textContent = tempcount;
+                        ele.count=tempcount;
+                        subtotaltemp=tempprice*tempcount;
+                        total.textContent = subtotaltemp;
+                        totalprice-=tempprice;
+
+                         console.log(totalprice)
+                        if(totalprice>=500){
+                            document.getElementById("gst").textContent=totalprice;
+                            document.getElementById("shippingCost").textContent = 0;
+                        }else{
+                            document.getElementById("gst").textContent=totalprice+55;
+                            document.getElementById("shippingCost").textContent = 55;
+                        } 
+
+                        document.getElementById("totalcost").textContent=totalprice;
+
+                        localStorage.setItem("cartarr",JSON.stringify(cartarr));
+                    }
+                    
+                } 
+
+                quantity.textContent = tempcount;
+
+                divtemp.append(imgtd, name, price, quantity, total);
+                maindiv.append(divtemp);
+
+
+
+                
+
+
+                divbutton.append(divbutton_increase,divbutton_Decrese,divbuttonRemove);
+                maindiv.append(divbutton);
+                
+                function removeCartItem(){
+                    cartarr.splice(i,1);
+                    
+                    localStorage.setItem("cartarr",JSON.stringify(cartarr));
+                    DisplayCartItems();
+                    // console.log(cartarr);
+                    // window.location.reload;
+                }
+
+               
+            }); 
+        }
+
+
+    }
+
+
+     // ----------header-----------
+     document.querySelector(".fa-user").addEventListener("click", dropdown);
+
+    function dropdown() {
+        var menu = document.querySelector(".loginRegisterDropdown");
+        if (menu.style.display == "none") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    }
+
+    // ----------------------------
+    var tokencheck =true;
+        document.getElementById("disc").addEventListener("click",discountedprice );
+        function discountedprice(){
+            var token= document.getElementById("discountcode").value;
+            if(token==="abcd" && tokencheck==true){
+                tokencheck=!tokencheck;
+                console.log(token);
+               
+                var t=+ document.getElementById("totalcost").textContent;
+
+                // if(t>=500){
+                //     document.getElementById("gst").textContent=t-1000;
+                // }else{
+                //     document.getElementById("gst").textContent=t-1000+55;
+                // }
+                if(t>=2000){
+                    document.getElementById("totalcost").textContent=(t-1000);
+                    window.alert("Congratulations!! Your ₹1000/- Coupon is applied");
+                }else{
+                    window.alert("Cart Value is less than ₹2000");
+                    tokencheck=!tokencheck;
+                    document.getElementById("totalcost").textContent=(t);
+                }
+                // console.log(t);
+            }
+        }
+</script>

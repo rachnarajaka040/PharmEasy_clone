@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button><a href="./cart.html" target="_blank">Go to Cart</a></button>
+  <button class="addToCart">add to Cart</button>
+</body>
+<script type="module">
+  import { arr } from "./data.js"
+  var cartarr = JSON.parse(localStorage.getItem("cartarr")) || [];
+  document.querySelector('.addToCart').addEventListener("click", test);
+
+  function test() {
+    cartarr.push(arr[0]);
+    cartarr.push(arr[1]);
+    localStorage.setItem("cartarr", JSON.stringify(cartarr));
+    // arr.map((element) => {
+    //   cartarr.push(element);
+    //   localStorage.setItem("cartarr", JSON.stringify(cartarr));
+    // })
+  }
+
+</script>
+
+</html>
