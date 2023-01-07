@@ -111,10 +111,15 @@ function openNav(x) {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
-
-
   function mychange(){
-    document.getElementById("upibtn").style.backgroundColor = "#10847E";
+    
+    let x = document.getElementById("myUPIn").value;
+    if(!x){
+      alert("Please Enter UPI ID");
+      return;
+    }
+
+    parent.location='orderCompleted.html'
   }
 
   window.addEventListener("load", function () {
@@ -125,8 +130,6 @@ function openNav(x) {
     
     
   });
-
-
   function myMobile(){
     let x = document.querySelector(".myMobile").value;
     if(x<=999999999){
