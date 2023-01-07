@@ -6,17 +6,45 @@ body {
   color: #30363c;
 }
 
+.navigator > p::before {
+  content: url(https://assets.pharmeasy.in/web-assets/images/arrow.svg);
+  margin: 0 15px;
+}
+
+.navigator > p {
+  color: #4f585e;
+  font-weight: 400;
+}
+
+.navigator {
+  display: flex;
+  width: 88%;
+  margin: auto;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.navigator a {
+  text-decoration: none;
+  color: #10847e;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .nodisplay {
   display: none;
 }
 
+.cart-section {
+  margin-top: 7rem;
+}
 .cart-container {
   width: 90%;
   margin: auto;
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  margin-top: 7rem;
   margin-bottom: 2rem;
 }
 .cart-left {

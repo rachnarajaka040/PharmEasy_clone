@@ -122,6 +122,8 @@ function billing(cartarr) {
       0
     );
 
+    var cartTotal = carttotal.toFixed(2);
+    localStorage.setItem("CartTotal", cartTotal);
     document.querySelector(
       ".cart-right-upper-itemTotal"
     ).textContent = `₹${carttotal.toFixed(2)}`;
@@ -162,3 +164,13 @@ addEventListener("load", function () {
   // onload invoke append function m
   append(cartarr);
 });
+
+document
+  .querySelector(".proceedToCheckout-btn")
+  .addEventListener("click", toCheckoutPage);
+
+function toCheckoutPage() {
+  if (cartarr.length > 0) {
+    window.location.href = "https://www.google.com";
+  }
+}
