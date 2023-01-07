@@ -115,7 +115,7 @@ body{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgba(177, 161, 161, 0.925);
+    background-color: rgba(236, 224, 224, 0.925);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -143,4 +143,9 @@ body{
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  .sidenav button:hover {
+    background-color: #10847E;
+    color: white;
   }
