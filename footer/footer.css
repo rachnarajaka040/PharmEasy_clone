@@ -4,6 +4,11 @@ body {
   font-family: "Inter", sans-serif;
    
 }
+.name
+{
+  text-align: center;
+  margin-bottom:30px;
+}
 #z {
   margin: 0 4rem;
   line-height: 16px;
