@@ -37,626 +37,750 @@
        href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
      />
      <script src="https://kit.fontawesome.com/7a37b61242.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
 
+     <!-- drawer.css -->
+
+  </head>
+  <body class="drawer drawer--right">
     <div id="body_div">
 
-        <h1>
-            Order Medicines Online
-        </h1>
+      <h1>
+          Order Medicines Online
+      </h1>
 
-        <!-- Search Box  -->
-        <div id="search_con">
-            <div class="div_sr_main" >
-                <div class="div_search">
-                  <div id="ds_sub1">
-                    <div>
-                      <img
-                        src="https://assets.pharmeasy.in/web-assets/_next/icons/valuePropDisc.svg"
-                        alt=""
-                      />
-                      <p>Flat 15% off</p>
-                    </div>
-                    <div>
-                      <img
-                        src="https://assets.pharmeasy.in/web-assets/_next/icons/valuePropProd.svg"
-                        alt=""
-                      />
-                      <p>1 Lakh+ Products</p>
-                    </div>
-                    <div>
-                      <img
-                        src="https://assets.pharmeasy.in/web-assets/_next/icons/valuePropReturn.svg"
-                        alt=""
-                      />
-                      <p>Easy Returns</p>
-                    </div>
+      <!-- Search Box  -->
+      <div id="search_con">
+          <div class="div_sr_main" >
+              <div class="div_search">
+                <div id="ds_sub1">
+                  <div>
+                    <img
+                      src="https://assets.pharmeasy.in/web-assets/_next/icons/valuePropDisc.svg"
+                      alt=""
+                    />
+                    <p>Flat 15% off</p>
                   </div>
-                  <div id="ds_sub2">
-                    <h3>Search for Medicines / Healthcare Products</h3>
-                    <div id="div_sinput">
-                      <div class="div_spincode">
-                        <h4>Pincode 679338</h4>
-                        <div>
-                          <i class="fa-solid fa-caret-down"></i>
-                        </div>
+                  <div>
+                    <img
+                      src="https://assets.pharmeasy.in/web-assets/_next/icons/valuePropProd.svg"
+                      alt=""
+                    />
+                    <p>1 Lakh+ Products</p>
+                  </div>
+                  <div>
+                    <img
+                      src="https://assets.pharmeasy.in/web-assets/_next/icons/valuePropReturn.svg"
+                      alt=""
+                    />
+                    <p>Easy Returns</p>
+                  </div>
+                </div>
+                <div id="ds_sub2">
+                  <h3>Search for Medicines / Healthcare Products</h3>
+                  <div id="div_sinput">
+                    <div class="div_spincode" id="div_serpincode">
+                      <h4 id="hCur_pincode">Pincode 679338</h4>
+                      <div>
+                        <i class="fa-solid fa-caret-down"></i>
                       </div>
-                      <input type="text" id="insearch" placeholder="Search medicines/Healthcare products" />
-            
-                      <button>
-                        <svg
-                          width="25"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M16.4895 15.5071C16.2159 15.2339 15.7727 15.2344 15.4996 15.508C15.2264 15.7816 15.2269 16.2248 15.5005      16.4979L16.4895 15.5071ZM19.5055 20.4954C19.7791 20.7685 20.2223 20.7681 20.4954 20.4945C20.7685 20.2209 20.7681 19.7777 20.4945 19.5046L19.5055 20.4954ZM8.69953 14.8717C9.03535 15.0632 9.46285 14.9462 9.65437 14.6104C9.8459 14.2745 9.72891 13.847 9.39309 13.6555L8.69953 14.8717ZM8.22704 12.5081C8.03023 12.1754 7.60093 12.0651 7.26818 12.262C6.93542 12.4588 6.82522 12.8881 7.02202 13.2208L8.22704 12.5081ZM15.5005 16.4979L19.5055 20.4954L20.4945 19.5046L16.4895 15.5071L15.5005 16.4979ZM17.3175 10.8957C17.3175 14.3068 14.5038 17.0914 11.0088 17.0914V18.4914C15.2554 18.4914 18.7175 15.1014 18.7175 10.8957H17.3175ZM11.0088 17.0914C7.51375 17.0914 4.7 14.3068 4.7 10.8957H3.3C3.3 15.1014 6.76211 18.4914 11.0088 18.4914V17.0914ZM4.7 10.8957C4.7 7.4846 7.51375 4.7 11.0088 4.7V3.3C6.76211 3.3 3.3 6.69002 3.3 10.8957H4.7ZM11.0088 4.7C14.5038 4.7 17.3175 7.4846 17.3175 10.8957H18.7175C18.7175 6.69002 15.2554 3.3 11.0088 3.3V4.7ZM9.39309 13.6555C8.91098 13.3806 8.50913 12.9851 8.22704 12.5081L7.02202 13.2208C7.42809 13.9074 8.00629 14.4763 8.69953 14.8717L9.39309 13.6555Z"
-                            fill="#8897A2"
-                          ></path>
-                        </svg>
-                      </button>
                     </div>
-                   
-                  </div>
-                </div>
-              </div>
-            
-            <div id="div_pres">
-
-                <div class="dp_sub1">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30"><defs><path id="a" d="M0 0h30v30H0z"></path></defs><g fill="none" fill-rule="evenodd"><g><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><path fill="#F3F6FA" d="M30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15" mask="url(#b)"></path></g><path fill="#3CCEA5" d="M23.31 4.5H8.313a.937.937 0 0 0-.933.94v18.323c0 .96.771 1.737 1.722 1.737h15.13V5.429a.926.926 0 0 0-.922-.929"></path><path fill="#3EC19D" d="M26.179 25.5H9.635c.663 0 1.201-.698 1.201-1.75v-.948c0-.182.146-.33.327-.33h15.843c.207 0 .374.169.374.377v1.44c0 .669-.538 1.211-1.201 1.211M18.508 11.441c0 2.364-1.9 4.28-4.245 4.28-2.344 0-4.245-1.916-4.245-4.28 0-2.364 1.9-4.28 4.245-4.28 2.344 0 4.245 1.916 4.245 4.28"></path><path fill="#FFF" d="M14.38 10.301a.474.474 0 0 1-.454.45c-.224.01-.447.008-.682.005a18.626 18.626 0 0 0-.193-.002V9.78l.21-.003c.25-.005.487-.01.723.011.25.022.406.223.396.513zm1.014 2.364l.958-1.299h-.421c-.172 0-.331-.002-.491.003-.077.002-.147.059-.188.11-.119.154-.236.31-.357.47l-.024.03-.406-.532c.553-.223.786-.553.82-1.136.037-.652-.368-1.19-.986-1.31a3.616 3.616 0 0 0-.66-.046l-.135-.002c-.285-.005-.57-.004-.858-.003l-.48.001v4.037h.877v-.583c.001-.272.002-.544 0-.839.075.003.152.002.228.002.08 0 .158 0 .236.003a.1.1 0 0 1 .037.01c.224.295.444.591.667.89l.143.193-.954 1.268.43.001h.174c.119 0 .235 0 .351-.003.074-.002.14-.055.178-.105.112-.146.222-.294.338-.45l.007-.01.017.024c.108.145.212.285.317.422.033.043.1.115.187.118.173.005.347.003.53.003h.43l-.965-1.267z"></path><path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width=".667" d="M12.905 18.015h4.934M12.905 20.524h6.03M10.954 18.015a.302.302 0 0 1-.301.303.302.302 0 0 1-.302-.303.302.302 0 0 1 .602 0zM10.954 20.524a.302.302 0 0 1-.301.303.302.302 0 0 1-.302-.303.302.302 0 0 1 .602 0z"></path></g>
-                        </svg>
-                    </div>
-
-                    <div>
-                        <p>
-                            Order via Prescription
-                        </p>
-                    </div>
-
-                    <div>
-                        <svg viewBox="1 2 20 20" width="15" height="20"><path fill="currentColor" fill-rule="evenodd" d="M8 7.4L9.4 6l6 6-6 6L8 16.6l4.6-4.6z"></path></svg>
-                    </div>
-
-                </div>
-                <div id="dp_sub2">
-                   <div class="dp_sub3">
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30"><defs><path id="a" d="M0 0h30v30H0z"></path></defs><g fill="none" fill-rule="evenodd"><g><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><path fill="#F3F6FA" d="M30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15" mask="url(#b)"></path></g><path fill="#3CCEA5" d="M23.31 4.5H8.313a.937.937 0 0 0-.933.94v18.323c0 .96.771 1.737 1.722 1.737h15.13V5.429a.926.926 0 0 0-.922-.929"></path><path fill="#3EC19D" d="M26.179 25.5H9.635c.663 0 1.201-.698 1.201-1.75v-.948c0-.182.146-.33.327-.33h15.843c.207 0 .374.169.374.377v1.44c0 .669-.538 1.211-1.201 1.211M18.508 11.441c0 2.364-1.9 4.28-4.245 4.28-2.344 0-4.245-1.916-4.245-4.28 0-2.364 1.9-4.28 4.245-4.28 2.344 0 4.245 1.916 4.245 4.28"></path><path fill="#FFF" d="M14.38 10.301a.474.474 0 0 1-.454.45c-.224.01-.447.008-.682.005a18.626 18.626 0 0 0-.193-.002V9.78l.21-.003c.25-.005.487-.01.723.011.25.022.406.223.396.513zm1.014 2.364l.958-1.299h-.421c-.172 0-.331-.002-.491.003-.077.002-.147.059-.188.11-.119.154-.236.31-.357.47l-.024.03-.406-.532c.553-.223.786-.553.82-1.136.037-.652-.368-1.19-.986-1.31a3.616 3.616 0 0 0-.66-.046l-.135-.002c-.285-.005-.57-.004-.858-.003l-.48.001v4.037h.877v-.583c.001-.272.002-.544 0-.839.075.003.152.002.228.002.08 0 .158 0 .236.003a.1.1 0 0 1 .037.01c.224.295.444.591.667.89l.143.193-.954 1.268.43.001h.174c.119 0 .235 0 .351-.003.074-.002.14-.055.178-.105.112-.146.222-.294.338-.45l.007-.01.017.024c.108.145.212.285.317.422.033.043.1.115.187.118.173.005.347.003.53.003h.43l-.965-1.267z"></path><path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width=".667" d="M12.905 18.015h4.934M12.905 20.524h6.03M10.954 18.015a.302.302 0 0 1-.301.303.302.302 0 0 1-.302-.303.302.302 0 0 1 .602 0zM10.954 20.524a.302.302 0 0 1-.301.303.302.302 0 0 1-.302-.303.302.302 0 0 1 .602 0z"></path></g>
-                        </svg>
-                    </div>
-
-                    <div>
-                        <p>
-                            Don't have a Prescription?
-                        </p>
-                       
-                    </div>
-
-                    <div>
-                        <svg viewBox="1 2 20 20" width="15" height="20"><path fill="currentColor" fill-rule="evenodd" d="M8 7.4L9.4 6l6 6-6 6L8 16.6l4.6-4.6z"></path></svg>
-                    </div>
-
-                    
-                   </div>
-                   
-                
-                   <div>
-                    <ul>
-                        <li>
-                            Add medicines to your cart
-                        </li>
-                        <li>
-                            Select Free Doctor Consultation at checkout
-                        </li>
-                    </ul>
-                    <div id="dp_sub4">
-                    
-                      <div>Or Call on +91 99929 99929</div>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 28 28"><path fill="#FFF" fill-rule="nonzero" d="M8.854 12.843a14.49 14.49 0 0 0 6.303 6.303l2.105-2.104a.951.951 0 0 1 .975-.23c1.072.354 2.23.545 3.415.545a.96.96 0 0 1 .957.957v3.338a.96.96 0 0 1-.957.957c-8.982 0-16.26-7.28-16.26-16.261a.96.96 0 0 1 .956-.957h3.348a.96.96 0 0 1 .956.957c0 1.195.191 2.343.545 3.415a.96.96 0 0 1-.239.975l-2.104 2.105z"></path></svg>
-                     </div>
-                   </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Search bar drop out list -->
-        <div id="div_res">
+                    <input type="text" id="insearch" placeholder="Search medicines/Healthcare products" />
           
-        </div>
+                    <button>
+                      <svg
+                        width="25"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.4895 15.5071C16.2159 15.2339 15.7727 15.2344 15.4996 15.508C15.2264 15.7816 15.2269 16.2248 15.5005      16.4979L16.4895 15.5071ZM19.5055 20.4954C19.7791 20.7685 20.2223 20.7681 20.4954 20.4945C20.7685 20.2209 20.7681 19.7777 20.4945 19.5046L19.5055 20.4954ZM8.69953 14.8717C9.03535 15.0632 9.46285 14.9462 9.65437 14.6104C9.8459 14.2745 9.72891 13.847 9.39309 13.6555L8.69953 14.8717ZM8.22704 12.5081C8.03023 12.1754 7.60093 12.0651 7.26818 12.262C6.93542 12.4588 6.82522 12.8881 7.02202 13.2208L8.22704 12.5081ZM15.5005 16.4979L19.5055 20.4954L20.4945 19.5046L16.4895 15.5071L15.5005 16.4979ZM17.3175 10.8957C17.3175 14.3068 14.5038 17.0914 11.0088 17.0914V18.4914C15.2554 18.4914 18.7175 15.1014 18.7175 10.8957H17.3175ZM11.0088 17.0914C7.51375 17.0914 4.7 14.3068 4.7 10.8957H3.3C3.3 15.1014 6.76211 18.4914 11.0088 18.4914V17.0914ZM4.7 10.8957C4.7 7.4846 7.51375 4.7 11.0088 4.7V3.3C6.76211 3.3 3.3 6.69002 3.3 10.8957H4.7ZM11.0088 4.7C14.5038 4.7 17.3175 7.4846 17.3175 10.8957H18.7175C18.7175 6.69002 15.2554 3.3 11.0088 3.3V4.7ZM9.39309 13.6555C8.91098 13.3806 8.50913 12.9851 8.22704 12.5081L7.02202 13.2208C7.42809 13.9074 8.00629 14.4763 8.69953 14.8717L9.39309 13.6555Z"
+                          fill="#8897A2"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          
+          <div id="div_pres">
+
+              <div class="dp_sub1">
+                  <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30"><defs><path id="a" d="M0 0h30v30H0z"></path></defs><g fill="none" fill-rule="evenodd"><g><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><path fill="#F3F6FA" d="M30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15" mask="url(#b)"></path></g><path fill="#3CCEA5" d="M23.31 4.5H8.313a.937.937 0 0 0-.933.94v18.323c0 .96.771 1.737 1.722 1.737h15.13V5.429a.926.926 0 0 0-.922-.929"></path><path fill="#3EC19D" d="M26.179 25.5H9.635c.663 0 1.201-.698 1.201-1.75v-.948c0-.182.146-.33.327-.33h15.843c.207 0 .374.169.374.377v1.44c0 .669-.538 1.211-1.201 1.211M18.508 11.441c0 2.364-1.9 4.28-4.245 4.28-2.344 0-4.245-1.916-4.245-4.28 0-2.364 1.9-4.28 4.245-4.28 2.344 0 4.245 1.916 4.245 4.28"></path><path fill="#FFF" d="M14.38 10.301a.474.474 0 0 1-.454.45c-.224.01-.447.008-.682.005a18.626 18.626 0 0 0-.193-.002V9.78l.21-.003c.25-.005.487-.01.723.011.25.022.406.223.396.513zm1.014 2.364l.958-1.299h-.421c-.172 0-.331-.002-.491.003-.077.002-.147.059-.188.11-.119.154-.236.31-.357.47l-.024.03-.406-.532c.553-.223.786-.553.82-1.136.037-.652-.368-1.19-.986-1.31a3.616 3.616 0 0 0-.66-.046l-.135-.002c-.285-.005-.57-.004-.858-.003l-.48.001v4.037h.877v-.583c.001-.272.002-.544 0-.839.075.003.152.002.228.002.08 0 .158 0 .236.003a.1.1 0 0 1 .037.01c.224.295.444.591.667.89l.143.193-.954 1.268.43.001h.174c.119 0 .235 0 .351-.003.074-.002.14-.055.178-.105.112-.146.222-.294.338-.45l.007-.01.017.024c.108.145.212.285.317.422.033.043.1.115.187.118.173.005.347.003.53.003h.43l-.965-1.267z"></path><path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width=".667" d="M12.905 18.015h4.934M12.905 20.524h6.03M10.954 18.015a.302.302 0 0 1-.301.303.302.302 0 0 1-.302-.303.302.302 0 0 1 .602 0zM10.954 20.524a.302.302 0 0 1-.301.303.302.302 0 0 1-.302-.303.302.302 0 0 1 .602 0z"></path></g>
+                      </svg>
+                  </div>
+
+                  <div>
+                      <p>
+                          Order via Prescription
+                      </p>
+                  </div>
+
+                  <div>
+                      <svg viewBox="1 2 20 20" width="15" height="20"><path fill="currentColor" fill-rule="evenodd" d="M8 7.4L9.4 6l6 6-6 6L8 16.6l4.6-4.6z"></path></svg>
+                  </div>
+
+              </div>
+              <div id="dp_sub2">
+                 <div class="dp_sub3">
+                  <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30"><defs><path id="a" d="M0 0h30v30H0z"></path></defs><g fill="none" fill-rule="evenodd"><g><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><path fill="#F3F6FA" d="M30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15" mask="url(#b)"></path></g><path fill="#3CCEA5" d="M23.31 4.5H8.313a.937.937 0 0 0-.933.94v18.323c0 .96.771 1.737 1.722 1.737h15.13V5.429a.926.926 0 0 0-.922-.929"></path><path fill="#3EC19D" d="M26.179 25.5H9.635c.663 0 1.201-.698 1.201-1.75v-.948c0-.182.146-.33.327-.33h15.843c.207 0 .374.169.374.377v1.44c0 .669-.538 1.211-1.201 1.211M18.508 11.441c0 2.364-1.9 4.28-4.245 4.28-2.344 0-4.245-1.916-4.245-4.28 0-2.364 1.9-4.28 4.245-4.28 2.344 0 4.245 1.916 4.245 4.28"></path><path fill="#FFF" d="M14.38 10.301a.474.474 0 0 1-.454.45c-.224.01-.447.008-.682.005a18.626 18.626 0 0 0-.193-.002V9.78l.21-.003c.25-.005.487-.01.723.011.25.022.406.223.396.513zm1.014 2.364l.958-1.299h-.421c-.172 0-.331-.002-.491.003-.077.002-.147.059-.188.11-.119.154-.236.31-.357.47l-.024.03-.406-.532c.553-.223.786-.553.82-1.136.037-.652-.368-1.19-.986-1.31a3.616 3.616 0 0 0-.66-.046l-.135-.002c-.285-.005-.57-.004-.858-.003l-.48.001v4.037h.877v-.583c.001-.272.002-.544 0-.839.075.003.152.002.228.002.08 0 .158 0 .236.003a.1.1 0 0 1 .037.01c.224.295.444.591.667.89l.143.193-.954 1.268.43.001h.174c.119 0 .235 0 .351-.003.074-.002.14-.055.178-.105.112-.146.222-.294.338-.45l.007-.01.017.024c.108.145.212.285.317.422.033.043.1.115.187.118.173.005.347.003.53.003h.43l-.965-1.267z"></path><path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width=".667" d="M12.905 18.015h4.934M12.905 20.524h6.03M10.954 18.015a.302.302 0 0 1-.301.303.302.302 0 0 1-.302-.303.302.302 0 0 1 .602 0zM10.954 20.524a.302.302 0 0 1-.301.303.302.302 0 0 1-.302-.303.302.302 0 0 1 .602 0z"></path></g>
+                      </svg>
+                  </div>
+
+                  <div>
+                      <p>
+                          Don't have a Prescription?
+                      </p>
+                     
+                  </div>
+
+                  <div>
+                      <svg viewBox="1 2 20 20" width="15" height="20"><path fill="currentColor" fill-rule="evenodd" d="M8 7.4L9.4 6l6 6-6 6L8 16.6l4.6-4.6z"></path></svg>
+                  </div>
+
+                  
+                 </div>
+                 
+              
+                 <div>
+                  <ul>
+                      <li>
+                          Add medicines to your cart
+                      </li>
+                      <li>
+                          Select Free Doctor Consultation at checkout
+                      </li>
+                  </ul>
+                  <div id="dp_sub4">
+                  
+                    <div>Or Call on +91 99929 99929</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 28 28"><path fill="#FFF" fill-rule="nonzero" d="M8.854 12.843a14.49 14.49 0 0 0 6.303 6.303l2.105-2.104a.951.951 0 0 1 .975-.23c1.072.354 2.23.545 3.415.545a.96.96 0 0 1 .957.957v3.338a.96.96 0 0 1-.957.957c-8.982 0-16.26-7.28-16.26-16.261a.96.96 0 0 1 .956-.957h3.348a.96.96 0 0 1 .956.957c0 1.195.191 2.343.545 3.415a.96.96 0 0 1-.239.975l-2.104 2.105z"></path></svg>
+                   </div>
+                 </div>
 
 
-      
+              </div>
+
+          </div>
+      </div>
+
+      <!-- Search bar drop out list -->
+      <div id="div_res">
         
-        <!-- Offer Division -->
-        <div class="div_offer">
+      </div>
 
-          <div>
-            <h2>
-              All Offers
-            </h2>
-          </div>
 
-         <div class="offer_main_con swiper">
-          <div class="con_offer swiper-wrapper">
-            <div class="con_sin_offer swiper-slide">
-              <div>
-                <img src="https://cms-contents.pharmeasy.in/offer/29e0c8c1469-LOGO_Freecharge%20(1).png?w=64&q=75" alt="">
-              </div>
-              <div>
-                  <p>
-                    Flat 10% cashback up to ₹100, Valid once per user
-                  </p>
-                  <p>
-                    Code Not Required
-                  </p>
-              </div>
-            </div>
-
-            <div class="con_sin_offer swiper-slide">
-              <div>
-                <img src="https://cms-contents.pharmeasy.in/offer/3faf145f606-PocketEasyLogo.jpg?w=64&q=75" alt="">
-              </div>
-              <div>
-                  <p>
-                    FLAT 25% OFF + FREE DELIVERY on first 3 medicine orders.
-                  </p>
-                  <p>
-                    Code: STAR25
-                  </p>
-              </div>
-            </div>
-
-            <div class="con_sin_offer swiper-slide">
-              <div>
-                <img src="https://cms-contents.pharmeasy.in/offer/201459ad3a7-citi.jpg?w=64&q=75" alt="">
-              </div>
-              <div>
-                  <p>
-                    Up to Rs.600 discount on a minimum transaction of Rs.2000
-                  </p>
-                  <p>
-                    Code Not Required
-                  </p>
-              </div>
-            </div>
-
-            <div class="con_sin_offer swiper-slide">
-              <div>
-                <img src="https://cms-contents.pharmeasy.in/offer/26f421a25c3-PocketEasyLogo.jpg?w=64&q=75" alt="">
-              </div>
-              <div>
-                  <p>
-                    Flat 27% OFF + up to Rs.5000 surprise cashback
-                  </p>
-                  <p>
-                    Code: VIBES27
-                  </p>
-              </div>
-            </div>
-
-            <div class="con_sin_offer swiper-slide">
-              <div>
-                <img src="https://cms-contents.pharmeasy.in/offer/26f421a25c3-PocketEasyLogo.jpg?w=64&q=75" alt="">
-              </div>
-              <div>
-                  <p>
-                    Get FREE delivery
-                  </p>
-                  <p>
-                    Code: FREEDE
-                  </p>
-              </div>
-            </div>
-            <div class="con_sin_offer swiper-slide">
-              <div>
-                <img src="https://cms-contents.pharmeasy.in/offer/26f421a25c3-PocketEasyLogo.jpg?w=64&q=75" alt="">
-              </div>
-              <div>
-                  <p>
-                    Flat 27% OFF + up to Rs.5000 surprise cashback
-                  </p>
-                  <p>
-                    Code: VIBES27
-                  </p>
-              </div>
-            </div>
-        </div>
-        <div class="swiper-button-next swiperBtn"></div>
-        <div class="swiper-button-prev swiperBtn"></div>
+    
       
-         </div>
+      <!-- Offer Division -->
+      <div class="div_offer">
 
-
-         <div class="offer_main_con2 swiper">
-          <div class="con_offer swiper-wrapper">
-            <div class="con_slide_2 swiper-slide">
-              <img src="https://consumer-app-images.pharmeasy.in/marketing/comp_3step.jpg" alt="">
-            </div>
-            <div class="con_slide_2 swiper-slide">
-              <img src="https://consumer-app-images.pharmeasy.in/marketing/comp_50lac.jpg" alt="">
-            </div>
-            <div class="con_slide_2 swiper-slide">
-              <img src="https://consumer-app-images.pharmeasy.in/marketing/comp_india_covered.jpg" alt="">
-            </div>
-            <div class="con_slide_2 swiper-slide">
-              <img src="https://consumer-app-images.pharmeasy.in/marketing/comp_india_covered.jpg" alt="">
-            </div>
-        </div>
-        <div class="swiper-button-next swiperBtn"></div>
-        <div class="swiper-button-prev swiperBtn"></div>
-      
-         </div>
+        <div>
+          <h2>
+            All Offers
+          </h2>
         </div>
 
-
-        <!-- Customer Reviews-->
-         <div class="div_rev_main">
-          <div>
-            <h2>
-              What our customers have to say
-            </h2>
+       <div class="offer_main_con swiper">
+        <div class="con_offer swiper-wrapper">
+          <div class="con_sin_offer swiper-slide">
+            <div>
+              <img src="https://cms-contents.pharmeasy.in/offer/29e0c8c1469-LOGO_Freecharge%20(1).png?w=64&q=75" alt="">
+            </div>
+            <div>
+                <p>
+                  Flat 10% cashback up to ₹100, Valid once per user
+                </p>
+                <p>
+                  Code Not Required
+                </p>
+            </div>
           </div>
 
-           <div class="rev_main_con swiper">
-            <div class="swiper-btn-prev"><i class="fa-solid fa-angle-left "></i></div>
-            <div class="slide_rev swiper-wrapper">
-                <div class="div_card_rev swiper-slide">
-                    <div>
-                        <h4>Tirthankar Das Purkayastha</h4>
-                        <p>April 23, 2020</p>
-                    </div>
-                    <div>
-                        <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
-                        <p>Very good app. Would recommend it to everyone requiring fast and efficient delivery of medicinal products at the doorstep.</p>
-                    </div>
-                </div>
-
-                <div class="div_card_rev swiper-slide">
-                    <div>
-                        <h4>Rajarshi Sarkar</h4>
-                        <p>April 22, 2020</p>
-                    </div>
-                    <div>
-                        <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
-                        <p>The app is really wonderful. Being a Product Manager myself, I would say that the User experience (UI/UX) of the app is top notch (easy to use, simple and convenient). Coming to services and delivery, I would say Pharmeasy is doing a tremendous job even during this unprecedented pandemic situation.</p>
-                    </div>
-                </div>
-
-                <div class="div_card_rev swiper-slide">
-                    <div>
-                        <h4>Darpan Dholakia</h4>
-                        <p>April 23, 2020</p>
-                    </div>
-                    <div>
-                        <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
-                        <p>Best service and app amongst all available. I have been using it for more than 3 years, and even during the pandemic, they have kept their standards high and are delivering the order within 24 hours. Keep up the good work.</p>
-                    </div>
-                </div>
-
-                <div class="div_card_rev swiper-slide">
-                    <div>
-                        <h4>Lipi Chaudhuri</h4>
-                        <p>April 15, 2020</p>
-                    </div>
-                    <div>
-                        <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
-                        <p>
-                            This app is a game changer for me. I am unable to go out always to buy medicinal products. Pharmeasy gives me the last liberty to shop essential healthcare products from home. The app is very user friendly and me being an elderly person do not find any difficulty in using it. They deliver well in time. Thanks😊 
-                        </p>
-                    </div>
-                </div>
-                <div class="div_card_rev swiper-slide">
-                    <div>
-                        <h4>Varun Sonagra</h4>
-                        <p>April 23, 2020</p>
-                    </div>
-                    <div>
-                        <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
-                        <p>
-                            I've had a good experience. The consultation with a doctor feature works well too. The prices and discounts are great too. Overall the simplicity of the app is a plus too. I recommend this app. Will always be a customer/user now! Genuinely!
-                        </p>
-                    </div>
-                </div>
-
-                <div class="div_card_rev swiper-slide">
-                    <div>
-                        <h4>Debanjan Roy</h4>
-                        <p>April 18, 2020</p>
-                    </div>
-                    <div>
-                        <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
-                        <p>Excellent experience. Pharmeasy has not let it's customers down during lockdown. Thanks team. Great job. The application is also very smooth. And does its job well with an attractive UI and easy to use features. Good job developer.</p>
-                    </div>
-                </div>
-
-                <div class="div_card_rev swiper-slide">
-                    <div>
-                        <h4>Tirthankar Das Purkayastha</h4>
-                        <p>
-                            April 23, 2020
-                        </p>
-                    </div>
-                    <div>
-                        <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
-                        <p>Very good app. Would recommend it to everyone requiring fast and efficient delivery of medicinal products at the doorstep.</p>
-                    </div>
-                </div>
+          <div class="con_sin_offer swiper-slide">
+            <div>
+              <img src="https://cms-contents.pharmeasy.in/offer/3faf145f606-PocketEasyLogo.jpg?w=64&q=75" alt="">
             </div>
-         
-
-           
-         
-
-            <div class="swiper-btn-next">  <i class="fa-solid fa-angle-right "></i></div>
+            <div>
+                <p>
+                  FLAT 25% OFF + FREE DELIVERY on first 3 medicine orders.
+                </p>
+                <p>
+                  Code: STAR25
+                </p>
+            </div>
           </div>
-         
-        </div>
-   
 
-        <!-- About Pharmeasy -->
-        <div class="div_about_main">
-          <div class="div_about">
-            <h3 class="about_head">India's No. 1 Medicine Delivery App</h3>
-            <p class="about_p">
-              The concept of medicine home delivery has been taken to a new level by the PharmEasy online medicine delivery app. You can use the PharmEasy online medicine delivery app to browse through an extensive range of medicines. Each medicine undergoes a 3-step quality check.
+          <div class="con_sin_offer swiper-slide">
+            <div>
+              <img src="https://cms-contents.pharmeasy.in/offer/201459ad3a7-citi.jpg?w=64&q=75" alt="">
+            </div>
+            <div>
+                <p>
+                  Up to Rs.600 discount on a minimum transaction of Rs.2000
+                </p>
+                <p>
+                  Code Not Required
+                </p>
+            </div>
+          </div>
+
+          <div class="con_sin_offer swiper-slide">
+            <div>
+              <img src="https://cms-contents.pharmeasy.in/offer/26f421a25c3-PocketEasyLogo.jpg?w=64&q=75" alt="">
+            </div>
+            <div>
+                <p>
+                  Flat 27% OFF + up to Rs.5000 surprise cashback
+                </p>
+                <p>
+                  Code: VIBES27
+                </p>
+            </div>
+          </div>
+
+          <div class="con_sin_offer swiper-slide">
+            <div>
+              <img src="https://cms-contents.pharmeasy.in/offer/26f421a25c3-PocketEasyLogo.jpg?w=64&q=75" alt="">
+            </div>
+            <div>
+                <p>
+                  Get FREE delivery
+                </p>
+                <p>
+                  Code: FREEDE
+                </p>
+            </div>
+          </div>
+          <div class="con_sin_offer swiper-slide">
+            <div>
+              <img src="https://cms-contents.pharmeasy.in/offer/26f421a25c3-PocketEasyLogo.jpg?w=64&q=75" alt="">
+            </div>
+            <div>
+                <p>
+                  Flat 27% OFF + up to Rs.5000 surprise cashback
+                </p>
+                <p>
+                  Code: VIBES27
+                </p>
+            </div>
+          </div>
+      </div>
+      <!-- <div class="swiper-button-next swiperBtn"></div>
+      <div class="swiper-button-prev swiperBtn"></div> -->
+       </div>
+
+
+       <div class="offer_main_con2 swiper">
+        <div class="con_offer swiper-wrapper">
+          <div class="con_slide_2 swiper-slide">
+            <img src="https://consumer-app-images.pharmeasy.in/marketing/comp_3step.jpg" alt="">
+          </div>
+          <div class="con_slide_2 swiper-slide">
+            <img src="https://consumer-app-images.pharmeasy.in/marketing/comp_50lac.jpg" alt="">
+          </div>
+          <div class="con_slide_2 swiper-slide">
+            <img src="https://consumer-app-images.pharmeasy.in/marketing/comp_india_covered.jpg" alt="">
+          </div>
+          <div class="con_slide_2 swiper-slide">
+            <img src="https://consumer-app-images.pharmeasy.in/marketing/comp_india_covered.jpg" alt="">
+          </div>
+      </div>
+      <!-- <div class="swiper-button-next swiperBtn"></div>
+      <div class="swiper-button-prev swiperBtn"></div> -->
+    
+       </div>
+      </div>
+
+
+      <!-- Customer Reviews-->
+       <div class="div_rev_main">
+        <div>
+          <h2>
+            What our customers have to say
+          </h2>
+        </div>
+
+         <div class="rev_main_con swiper">
+          <!-- <div class="swiper-btn-prev"><i class="fa-solid fa-angle-left "></i></div> -->
+          <div class="slide_rev swiper-wrapper">
+              <div class="div_card_rev swiper-slide">
+                  <div>
+                      <h4>Tirthankar Das Purkayastha</h4>
+                      <p>April 23, 2020</p>
+                  </div>
+                  <div>
+                      <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
+                      <p>Very good app. Would recommend it to everyone requiring fast and efficient delivery of medicinal products at the doorstep.</p>
+                  </div>
+              </div>
+
+              <div class="div_card_rev swiper-slide">
+                  <div>
+                      <h4>Rajarshi Sarkar</h4>
+                      <p>April 22, 2020</p>
+                  </div>
+                  <div>
+                      <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
+                      <p>The app is really wonderful. Being a Product Manager myself, I would say that the User experience (UI/UX) of the app is top notch (easy to use, simple and convenient). Coming to services and delivery, I would say Pharmeasy is doing a tremendous job even during this unprecedented pandemic situation.</p>
+                  </div>
+              </div>
+
+              <div class="div_card_rev swiper-slide">
+                  <div>
+                      <h4>Darpan Dholakia</h4>
+                      <p>April 23, 2020</p>
+                  </div>
+                  <div>
+                      <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
+                      <p>Best service and app amongst all available. I have been using it for more than 3 years, and even during the pandemic, they have kept their standards high and are delivering the order within 24 hours. Keep up the good work.</p>
+                  </div>
+              </div>
+
+              <div class="div_card_rev swiper-slide">
+                  <div>
+                      <h4>Lipi Chaudhuri</h4>
+                      <p>April 15, 2020</p>
+                  </div>
+                  <div>
+                      <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
+                      <p>
+                          This app is a game changer for me. I am unable to go out always to buy medicinal products. Pharmeasy gives me the last liberty to shop essential healthcare products from home. The app is very user friendly and me being an elderly person do not find any difficulty in using it. They deliver well in time. Thanks😊 
+                      </p>
+                  </div>
+              </div>
+              <div class="div_card_rev swiper-slide">
+                  <div>
+                      <h4>Varun Sonagra</h4>
+                      <p>April 23, 2020</p>
+                  </div>
+                  <div>
+                      <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
+                      <p>
+                          I've had a good experience. The consultation with a doctor feature works well too. The prices and discounts are great too. Overall the simplicity of the app is a plus too. I recommend this app. Will always be a customer/user now! Genuinely!
+                      </p>
+                  </div>
+              </div>
+
+              <div class="div_card_rev swiper-slide">
+                  <div>
+                      <h4>Debanjan Roy</h4>
+                      <p>April 18, 2020</p>
+                  </div>
+                  <div>
+                      <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
+                      <p>Excellent experience. Pharmeasy has not let it's customers down during lockdown. Thanks team. Great job. The application is also very smooth. And does its job well with an attractive UI and easy to use features. Good job developer.</p>
+                  </div>
+              </div>
+
+              <div class="div_card_rev swiper-slide">
+                  <div>
+                      <h4>Tirthankar Das Purkayastha</h4>
+                      <p>
+                          April 23, 2020
+                      </p>
+                  </div>
+                  <div>
+                      <img src="https://assets.pharmeasy.in/web-assets/_next/icons/quote_sign.svg" alt="">
+                      <p>Very good app. Would recommend it to everyone requiring fast and efficient delivery of medicinal products at the doorstep.</p>
+                  </div>
+              </div>
+          </div>
+       
+
+         
+       
+
+       <!-- <div class="swiper-btn-next">  <i class="fa-solid fa-angle-right "></i></div> -->   
+        </div>
+       
+      </div>
+ 
+
+      <!-- About Pharmeasy -->
+      <div class="div_about_main">
+        <div class="div_about">
+          <h3 class="about_head">India's No. 1 Medicine Delivery App</h3>
+          <p class="about_p">
+            The concept of medicine home delivery has been taken to a new level by the PharmEasy online medicine delivery app. You can use the PharmEasy online medicine delivery app to browse through an extensive range of medicines. Each medicine undergoes a 3-step quality check.
 
 Whatever be your medicine requirement, you are sure to locate it in this online pharmacy. All you have to do then is to add it to your cart and place the order and get your order delivered quickly. India’s beloved online medicine delivery app makes sure that you get your medicines in record time because we know how vital time is in any treatment. Sit back, and we will have all your medical necessities delivered to your doorstep.
-            </p>
-          </div>
-          <div class="div_about">
-            <h3 class="about_head">Online Medicine - Your Online Medical Store in India</h3>
-            <p class="about_p">
-              Tired of walking all the way to your local medicine store? Worried that going out is risky during the current times? Order medicines online at PharmEasy, India’s trusted online medicine app. With more than 1 lakh medicines always in stock, you are sure to find what you are looking for, and that too at affordable prices!
+          </p>
+        </div>
+        <div class="div_about">
+          <h3 class="about_head">Online Medicine - Your Online Medical Store in India</h3>
+          <p class="about_p">
+            Tired of walking all the way to your local medicine store? Worried that going out is risky during the current times? Order medicines online at PharmEasy, India’s trusted online medicine app. With more than 1 lakh medicines always in stock, you are sure to find what you are looking for, and that too at affordable prices!
 
-              Besides, extremely stringent sanitization norms are followed at your favourite online medical store. PharmEasy takes the safety of customers and employees very seriously.
-            </p>
-          </div>
-
-          <div class="div_about">
-            <h3 class="about_head">Reasons To Buy Medicine Online From PharmEasy</h3>
-            <p class="about_p">
-              Here are a few reasons that will convince you to give online medicine order through the PharmEasy app -
-            </p>
-            <ul>
-              <li>1,200+ cities and 20,000+ Pin codes served</li>
-              <li>Express Delivery</li>
-              <li>1 Lakh+ medicines available</li>
-              <li>Cash on delivery option available</li>
-              <li>Attractive offers</li>
-              <li>Cashback option through wallet</li>
-              <li>Stringent quality checks</li>
-              <li>Garnered the trust of more than 10 million users who have made an online purchase through PharmEasy</li>
-              
-            </ul>
-          </div>
-
-          <div class="div_about">
-            <h3 class="about_head"></h3>
-            <p class="about_p">
-             
-            </p>
-          </div>
-
-          <div class="div_about">
-            <h2>Order Medicines Online</h2>
-            <h3 class="about_head">Get 3-Step Quality-checked Medicines</h3>
-            <p class="about_p">
-              PharmEasy is a one-stop-shop for all your healthcare needs. We have 1L+ products for you to choose from. Buy medicines online at affordable prices from the comforts of your home in just a few clicks and get them delivered at your doorstep.
-              The entire process of shopping for medicines is hassle-free and convenient. All you have to do is search for the products you need on our website or app, add to cart and then proceed with the checkout process.
-              With our scheduled refill reminder, you don’t even need to keep track of your refill dates.
-              What’s more, we have great offers, with added discounts and massive e-wallet cashbacks on purchasing medicines!
-            </p>
-          </div>
-
-          <div class="div_about">
-            <h3 class="about_head"></h3>
-            <p class="about_p">
-             
-            </p>
-          </div>
+            Besides, extremely stringent sanitization norms are followed at your favourite online medical store. PharmEasy takes the safety of customers and employees very seriously.
+          </p>
         </div>
 
-        <!-- FAQ Part -->
+        <div class="div_about">
+          <h3 class="about_head">Reasons To Buy Medicine Online From PharmEasy</h3>
+          <p class="about_p">
+            Here are a few reasons that will convince you to give online medicine order through the PharmEasy app -
+          </p>
+          <ul>
+            <li>1,200+ cities and 20,000+ Pin codes served</li>
+            <li>Express Delivery</li>
+            <li>1 Lakh+ medicines available</li>
+            <li>Cash on delivery option available</li>
+            <li>Attractive offers</li>
+            <li>Cashback option through wallet</li>
+            <li>Stringent quality checks</li>
+            <li>Garnered the trust of more than 10 million users who have made an online purchase through PharmEasy</li>
+            
+          </ul>
+        </div>
 
-        <div class="div_faq_main">
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ Is buying medicines online safe?</h4>
+        <div class="div_about">
+          <h3 class="about_head"></h3>
+          <p class="about_p">
+           
+          </p>
+        </div>
 
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <p>
-                Absolutely! All our medicines undergo a three-step quality check process to ensure they are of high quality.<br>
+        <div class="div_about">
+          <h2>Order Medicines Online</h2>
+          <h3 class="about_head">Get 3-Step Quality-checked Medicines</h3>
+          <p class="about_p">
+            PharmEasy is a one-stop-shop for all your healthcare needs. We have 1L+ products for you to choose from. Buy medicines online at affordable prices from the comforts of your home in just a few clicks and get them delivered at your doorstep.
+            The entire process of shopping for medicines is hassle-free and convenient. All you have to do is search for the products you need on our website or app, add to cart and then proceed with the checkout process.
+            With our scheduled refill reminder, you don’t even need to keep track of your refill dates.
+            What’s more, we have great offers, with added discounts and massive e-wallet cashbacks on purchasing medicines!
+          </p>
+        </div>
+
+        <div class="div_about">
+          <h3 class="about_head"></h3>
+          <p class="about_p">
+           
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Part -->
+
+      <div class="div_faq_main">
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ Is buying medicines online safe?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <p>
+              Absolutely! All our medicines undergo a three-step quality check process to ensure they are of high quality.<br>
 We source our products only from licensed retail pharmacies.<br>
 PharmEasy is used by 5M+ users across 1.2k+ cities in India incl. Bangalore, Delhi, Mumbai, Kolkata, Hyderabad, Gurgaon, Noida, Pune, etc. for purchasing medicines online.
-              </p>
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ Why choose us for your medicine home delivery?</h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <ul>
-                <li>Used by 5M+ customers</li>
-                <li>Delivery in 24-48* hours</li>
-                <li>Over 1L+ meds and healthcare products for you to select from</li>
-                <li>3-step quality-checked products</li>
-                <li>PharmEasy Plus subscription with exclusive benefits</li>
-                <li>We deliver in 22k+ pin codes across 1.2k+ cities</li>
-                <li>Scheduled refill reminders</li>
-                <li>Attractive deals and e-wallet cashbacks</li>
-                <li>A highly capable team of experienced pharmacists and healthcare professionals</li>
-                <li>Cash-on-delivery available</li>
-
-              </ul>
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4></h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ How do I order medicines from PharmEasy?</h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <ol>
-                <li>
-                  Visit our website or open our online medicine app on your phone.
-                </li>
-                <li>Upload a valid doctor’s prescription and search from our list of medicines.</li>
-                <li>Enter the address where you want your package to be delivered.</li>
-                <li>Our partner retailer will call you to confirm the order.</li>
-                <li>The medicine is packed by the pharmacist.</li>
-                <li>Our delivery person will deliver the package at your doorstep.</li>
-              </ol>
-              <p>
-                You can use our app or visit the website to track your package.
-              </p>
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ When will PharmEasy deliver my medicines?</h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <p>
-                Once you purchase your medicines online with us, you will get it within 24-48* hours.
-              </p>
-              <p>
-                *T&C: The delivery time might vary depending on the delivery location.
-              </p>
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ Do I get discounts/cashback while ordering medicines online with PharmEasy?</h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <p>Yes, you can get huge discounts and massive e-wallet cashback on purchasing medicines.</p>
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ If a medicine that I want to order is currently unavailable then what should I do?</h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <p>You can log in from the PharmEasy app and click on the ‘Notify Me’ option for that particular product or medicine. You will be notified as soon as the product is back in stock.</p>
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ When will I receive my order?</h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <p>Your order will be delivered as per the 'Estimated Delivery Date' committed at the time of order placement. You can check this by selecting your order from the "My Orders" section. Keep a lookout for our order delivery updates.</p>
-              <p>
-                Note: Due to the current COVID-19 crisis, the delivery date may not be as per usual timelines and we request you to bear with us. But rest assured, we are working round the clock to deliver your order as soon as possible.
-              </p>
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ What is the shelf life of medicines being provided?</h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <p>We ensure that the shelf life of the medicines being supplied by our partner retailers is a minimum of 3 months from the date of delivery.</p>
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ How can I modify my order?</h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <p>Unfortunately, once your order is confirmed, it cannot be modified. You can place a fresh order.</p>
-            </div>
-          </div>
-
-          <div class="div_faq_con">
-            <div class="div_faq_head">
-              <h4>✅ How do I cancel my order?</h4>
-
-              <!-- <i class="fa-solid fa-chevron-down"></i> -->
-              <!-- <i class="fa-solid fa-chevron-up"></i> -->
-              <i class="fa-solid fa-chevron-down fa_sr_down"></i>
-            </div>
-            <div class="div_faq_body">
-              <p>You can cancel your order from the ‘Order Details’ screen before it is out for delivery. Simply click on the Account icon at the bottom of the App Homepage > select ‘Orders’ > Select the order which you want to cancel > tap “Cancel”. You can also refuse it at the time of delivery and a refund will be processed to the payment source, if the order amount was paid online.</p>
-            </div>
+            </p>
           </div>
         </div>
-        
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ Why choose us for your medicine home delivery?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <ul>
+              <li>Used by 5M+ customers</li>
+              <li>Delivery in 24-48* hours</li>
+              <li>Over 1L+ meds and healthcare products for you to select from</li>
+              <li>3-step quality-checked products</li>
+              <li>PharmEasy Plus subscription with exclusive benefits</li>
+              <li>We deliver in 22k+ pin codes across 1.2k+ cities</li>
+              <li>Scheduled refill reminders</li>
+              <li>Attractive deals and e-wallet cashbacks</li>
+              <li>A highly capable team of experienced pharmacists and healthcare professionals</li>
+              <li>Cash-on-delivery available</li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4></h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            
+          </div>
+        </div>
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ How do I order medicines from PharmEasy?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <ol>
+              <li>
+                Visit our website or open our online medicine app on your phone.
+              </li>
+              <li>Upload a valid doctor’s prescription and search from our list of medicines.</li>
+              <li>Enter the address where you want your package to be delivered.</li>
+              <li>Our partner retailer will call you to confirm the order.</li>
+              <li>The medicine is packed by the pharmacist.</li>
+              <li>Our delivery person will deliver the package at your doorstep.</li>
+            </ol>
+            <p>
+              You can use our app or visit the website to track your package.
+            </p>
+          </div>
+        </div>
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ When will PharmEasy deliver my medicines?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <p>
+              Once you purchase your medicines online with us, you will get it within 24-48* hours.
+            </p>
+            <p>
+              *T&C: The delivery time might vary depending on the delivery location.
+            </p>
+          </div>
+        </div>
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ Do I get discounts/cashback while ordering medicines online with PharmEasy?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <p>Yes, you can get huge discounts and massive e-wallet cashback on purchasing medicines.</p>
+          </div>
+        </div>
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ If a medicine that I want to order is currently unavailable then what should I do?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <p>You can log in from the PharmEasy app and click on the ‘Notify Me’ option for that particular product or medicine. You will be notified as soon as the product is back in stock.</p>
+          </div>
+        </div>
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ When will I receive my order?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <p>Your order will be delivered as per the 'Estimated Delivery Date' committed at the time of order placement. You can check this by selecting your order from the "My Orders" section. Keep a lookout for our order delivery updates.</p>
+            <p>
+              Note: Due to the current COVID-19 crisis, the delivery date may not be as per usual timelines and we request you to bear with us. But rest assured, we are working round the clock to deliver your order as soon as possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ What is the shelf life of medicines being provided?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <p>We ensure that the shelf life of the medicines being supplied by our partner retailers is a minimum of 3 months from the date of delivery.</p>
+          </div>
+        </div>
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ How can I modify my order?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <p>Unfortunately, once your order is confirmed, it cannot be modified. You can place a fresh order.</p>
+          </div>
+        </div>
+
+        <div class="div_faq_con">
+          <div class="div_faq_head">
+            <h4>✅ How do I cancel my order?</h4>
+
+            <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            <!-- <i class="fa-solid fa-chevron-up"></i> -->
+            <i class="fa-solid fa-chevron-down fa_sr_down"></i>
+          </div>
+          <div class="div_faq_body">
+            <p>You can cancel your order from the ‘Order Details’ screen before it is out for delivery. Simply click on the Account icon at the bottom of the App Homepage > select ‘Orders’ > Select the order which you want to cancel > tap “Cancel”. You can also refuse it at the time of delivery and a refund will be processed to the payment source, if the order amount was paid online.</p>
+          </div>
+        </div>
+      </div>
       
-        
-    </div>
+    
+      
+  </div>
+
+  <!--  ADDRESS DRAWER  -->
+
+
 
 
 
     
+    <div class="drawer-nav nav_address"  role="navigation">
+     
+      <div>
+        <h1>
+          Choose your <br> Location
+        </h1>
+      </div>
+      <div class="div_ad_pin_con">
+        <input type="text" placeholder="Enter PIN Code">
+        <button>Check</button>
+      </div>
+      <div>
+        <h4>Saved Addresses</h4>
+        <div class="div_ad_subcon">
+          <div class="div_add_con" id="div_add_cont">
+            <div>
+              <img src="https://assets.pharmeasy.in/web-assets/_next/icons/home-address.svg" alt="">
+           
+              <div >
+                <h5>Home</h5>
+                <br>
+                <p>SUHAIL K</p>
+                <p>HOUSE</p>
+                <p>STREET NAME</p>
+                <p>CITY AND PINCODE</p>
+              </div>
+             </div>
+             <div>
+              <img src="https://assets.pharmeasy.in/web-assets/_next/icons/home-address.svg" alt="">
+           
+              <div >
+                <h5>Home</h5>
+                <br>
+                <p>SUHAIL K</p>
+                <p>HOUSE</p>
+                <p>STREET NAME</p>
+                <p>CITY AND PINCODE</p>
+              </div>
+             </div>
+          </div>
+
+          <div id="div_btn_add_new">
+            <img src="https://assets.pharmeasy.in/web-assets/_next/icons/add-address.svg" alt="">
+            <h4>
+              Add New Address
+            </h4>
+          </div>
+
+          <div>
+            <img src="https://assets.pharmeasy.in/web-assets/_next/icons/scooter-coloured.svg" alt="">
+            <p>
+              Serving more than 1,000 towns and cities in India.
+            </p>
+          </div>
+
+          <div>
+           
+            <p>
+              Over 30,00,000 orders safely delivered
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+ 
+  <!-- ADD ADDRESS DETAILS MODAL -->
+
+  <div class="add_dt_modal_main">
+    <div class="add_det_con">
+      <div id="btn_close_add">
+        <i class="fa-solid fa-arrow-left"></i>
+        <h2>Add Address</h2>
+      </div>
+
+      <div>
+        <input type="text" name="" id="adInname" placeholder="Deliver to*">
+        <br>
+        <br>
+        <input type="text" name="" id="adInMobile" placeholder="Mobile Number*">
+        <p>For all delivery related communication</p>
+        <br>
+        <input type="number" name="" id="adInPincode" placeholder="Pincode*">
+        <br>
+        <br>
+        <input type="text" name="" id="adInHouse" placeholder="House number and building*">
+        <br>
+        <br>
+        <input type="text" name="" id="adInStreet" placeholder="Street Name*">
+      </div>
+
+      <div>
+        <p>Address Type*</p>
+        <div class="div_adtype">
+         <input type="radio" name="adType" id="adHome" value="Home" class="ad_rdinput">
+         <label for="adHome" class="ad_rdLabel">Home</label>
+
+         <input type="radio" name="adType" id="adWork" value="Work" class="ad_rdinput">
+         <label for="adWork" class="ad_rdLabel">Work</label>
+
+         <input type="radio" name="adType" id="adOthers" value="Others" class="ad_rdinput">
+         <label for="adOthers" class="ad_rdLabel">Others</label>
+        </div>
+      </div>
+
+      <div>
+       <button id="btnSaveAd">Save and Continue</button>
+      </div>
+      
+
+    </div>
+
+  </div>
+    
   </body>
 </html>
-
+<!-- jquery & iScroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
@@ -670,13 +794,28 @@ PharmEasy is used by 5M+ users across 1.2k+ cities in India incl. Bangalore, Del
       centerSlide: "true",
       grabCursor: "true",
       fade:"true",
+      autoplay:{
+        delay:1500,
+        disableOnInteraction:false,
+        pauseOnMouseEnter:true
+      },
       pagination: {
         el:".swiper-pagination",
         clickable: true,
         dynamicBullets: true
       },
       
-      
+      breakpoints:{
+        0:{
+          slidesPerView:1,
+        },
+        520:{
+          slidesPerView:2,
+        },
+        950:{
+          slidesPerView:4,
+        },
+      },
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -690,6 +829,11 @@ PharmEasy is used by 5M+ users across 1.2k+ cities in India incl. Bangalore, Del
       centerSlide: "true",
       grabCursor: "true",
       fade:"true",
+      autoplay:{
+        delay:2000,
+        disableOnInteraction:false,
+        pauseOnMouseEnter:true
+      },
       pagination: {
         el:".swiper-pagination",
         clickable: true,
@@ -701,6 +845,17 @@ PharmEasy is used by 5M+ users across 1.2k+ cities in India incl. Bangalore, Del
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      breakpoints:{
+        0:{
+          slidesPerView:1,
+        },
+        520:{
+          slidesPerView:1,
+        },
+        950:{
+          slidesPerView:2,
+        },
+      }
     });
 
     var swiperRev = new Swiper(".rev_main_con", {
@@ -711,6 +866,11 @@ PharmEasy is used by 5M+ users across 1.2k+ cities in India incl. Bangalore, Del
       centerSlide: "true",
       grabCursor: "true",
       fade:"true",
+      autoplay:{
+        delay:2000,
+        disableOnInteraction:false,
+        pauseOnMouseEnter:true
+      },
       pagination: {
         el:".swiper-pagination",
         clickable: true,
@@ -722,6 +882,42 @@ PharmEasy is used by 5M+ users across 1.2k+ cities in India incl. Bangalore, Del
         nextEl: ".swiper-btn-next",
         prevEl: ".swiper-btn-prev",
       },
+      breakpoints:{
+        0:{
+          slidesPerView:1,
+        },
+        520:{
+          slidesPerView:1,
+        },
+        950:{
+          slidesPerView:3,
+        },
+      }
     });
+    $(document).ready(function() {
+  $('.drawer').drawer();
+});
+
+$(document).ready(function() {
+  $('.drawer2').drawer();
+});
+
+$('.drawer2').drawer({
+  class: {
+    nav: 'drawer-nav2',
+    toggle: 'drawer-toggle',
+    overlay: 'drawer-overlay',
+    open: 'drawer-open',
+    close: 'drawer-close',
+    dropdown: 'drawer-dropdown'
+  },
+  iscroll: {
+    // Configuring the iScroll
+    // https://github.com/cubiq/iscroll#configuring-the-iscroll
+    mouseWheel: true,
+    preventDefault: false
+  },
+  showOverlay: true
+});
   </script>
 <script src="searchmed.js" type="module"></script>
