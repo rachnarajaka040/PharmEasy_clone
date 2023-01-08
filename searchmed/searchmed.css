@@ -5,7 +5,28 @@
 #body_div {
   width: 70%;
   margin: auto;
+  margin-top: 10%;
 }
+#body_div>h1{
+  font-size: 26px;
+}
+#divsr_page_link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+#divsr_page_link>p{
+  margin: 0px;
+  margin-left: 5px;
+  color: #a0a5a5;
+}
+#divsr_page_link>a{
+margin-right: 5px;
+color: #454646;
+text-decoration: none;
+cursor: pointer;
+}
+
 #search_con {
   display: flex;
   justify-content: space-between;
