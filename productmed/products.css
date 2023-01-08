@@ -9,6 +9,7 @@
     width: 100%;
     margin: auto;
     position: relative;
+    margin-top: 8%;
 }
 .div_pr_maincon>.div_pr_subcon1{
     
@@ -123,6 +124,9 @@
     cursor: pointer;
     color: white;
 }
+.div_pr_details>div>div>button:hover{
+    background-color: #189a93;
+}
 .div_pr_details>div>div>.btninCart{
     background-color: #d9f2f0;
     color: #10847e;
@@ -148,6 +152,9 @@
     font-weight: 700;
     cursor: pointer;
 
+}
+.div_pr_subcon2>button:hover{
+    background-color: #043432;
 }
 
 
@@ -229,4 +236,16 @@
     color: #10847e;
 
 
+  }
+
+  #div_head_name{
+    justify-content: space-between;
+    display: flex;
+  }
+  #div_head_name>img{
+    background-color: #d8d3ce;
+      border-radius: 50%;
+      padding: 5px;
+      width: 20px;
+    
   }
