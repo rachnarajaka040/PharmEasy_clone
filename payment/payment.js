@@ -1,9 +1,12 @@
-var cartarr = JSON.parse(localStorage.getItem("cartarr")) || [];
-//cartarr.CartTotal = 600;
+var CartTotal = JSON.parse(localStorage.getItem("CartTotal")) || [];
+//CartTotal.CartTotal = 600;
 function openNav(x) {
-    document.getElementById("mySidenav").style.width = "500px";
-    if(x===1){
-      document.getElementById("mySidenav").innerHTML = `
+  document.getElementById("mySidenav").style.width = "500px";
+  let div = document.querySelector("#payment_optn");
+  div.classList.add("darkAndDullBackgound");
+  console.log(div.classList);
+  if (x === 1) {
+    document.getElementById("mySidenav").innerHTML = `
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <h3 style="font-size: 16px;  text-align: center;" class="paymentTxt">Enter New Card</h3> 
       
@@ -31,24 +34,33 @@ function openNav(x) {
       <label >Card Number</label>
       <input id="myCardNo" type="tel" maxlength="16" style="height: 45px; width: 440px; font-size: 16px; border-radius: 5px; text-align: center;" placeholder="1111-1111-1111-1111" required autofocus><br>
       <div style="display: flex; justify-content: space-between;">
+      <br><br>
       <div>
+      <br>
         <label >Valid Through</label>
+        
         <input id="myValid" type="text" style="height: 45px; width: 205px; font-size: 16px; border-radius: 5px; text-align: center;" placeholder="MM/YY">
       </div>
       <div>
+      <br>
         <label >CVV</label>
+       
         <input id="myCVV" type="tel" maxlength="3" style="height: 45px; width: 205px; font-size: 16px; border-radius: 5px; text-align: center; " placeholder="123">
       </div>
       </div>
+      <br>
       <label >Name on Card</label>
+      
       <input id="myName"" type="text" placeholder="eg. Ankit Kumar" style="height: 45px; width: 440px; font-size: 16px; border-radius: 5px; text-align: center;"><br><br>
-      <button style="height: 45px; width: 440px; border-radius: 5px; background-color: #10847E; font-size: 16px; font-weight: bold;  border: 0ch;"  onClick="myCard()">Pay Now</button>
+      <button style="height: 45px; width: 440px; border-radius: 5px;color: white;background-color: #10847E; font-size: 16px; font-weight: bold;  border: 0ch;"  onClick="myCard()">Pay Now</button>
       </div>
       </div>
     
       `;
-    }else if(x===2){
-      document.getElementById("mySidenav").innerHTML = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  } else if (x === 2) {
+    document.getElementById(
+      "mySidenav"
+    ).innerHTML = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       
 
       
@@ -61,12 +73,14 @@ function openNav(x) {
       <label style="">Mobile Number</label><br><br>
       <input class="myMobile" type="tel" maxlength="10" style="height: 45px; width: 440px; font-size: 16px; border-radius: 5px; text-align: center;" placeholder="1234567890" required autofocus><br>
       <br><br>
-      <button  style="height: 45px; width: 440px; border-radius: 5px; background-color: #10847E; font-size: 16px; font-weight: bold;  border: 0ch;"  onClick="myMobile()">Pay Now</button>
+      <button  style="height: 45px; width: 440px; border-radius: 5px; background-color: #10847E;color:white; font-size: 16px; font-weight: bold;  border: 0ch;"  onClick="myMobile()">Pay Now</button>
       </div>
       </div>
       `;
-    }else if(x===3){
-      document.getElementById("mySidenav").innerHTML = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  } else if (x === 3) {
+    document.getElementById(
+      "mySidenav"
+    ).innerHTML = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       
 
       
@@ -79,13 +93,14 @@ function openNav(x) {
       <label style="">Mobile Number</label><br><br>
       <input class="myMobile" type="tel" maxlength="10" style="height: 45px; width: 440px; font-size: 16px; border-radius: 5px; text-align: center;" placeholder="1234567890" required autofocus><br>
       <br><br>
-      <button  style="height: 45px; width: 440px; border-radius: 5px; background-color: #10847E; font-size: 16px; font-weight: bold;  border: 0ch;"  onClick="myMobile()">Pay Now</button>
+      <button  style="height: 45px; width: 440px; border-radius: 5px; background-color: #10847E; color:white ; font-size: 16px; font-weight: bold;  border: 0ch;"  onClick="myMobile()">Pay Now</button>
       </div>
       </div>
       `;
-    }else if(x===4){
-      
-      document.getElementById("mySidenav").innerHTML = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  } else if (x === 4) {
+    document.getElementById(
+      "mySidenav"
+    ).innerHTML = `<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       
 
       
@@ -98,71 +113,68 @@ function openNav(x) {
       <label style="">Mobile Number</label><br><br>
       <input class="myMobile" type="tel" maxlength="10" style="height: 45px; width: 440px; font-size: 16px; border-radius: 5px; text-align: center;" placeholder="1234567890" required autofocus><br>
       <br><br>
-      <button   style="height: 45px; width: 440px; border-radius: 5px; background-color: #10847E; font-size: 16px; font-weight: bold;  border: 0ch;"  onClick="myMobile()">Pay Now</button>
+      <button   style="height: 45px; width: 440px; border-radius: 5px; background-color: #10847E; color:white ; font-size: 16px; font-weight: bold;  border: 0ch;"  onClick="myMobile()">Pay Now</button>
       </div>
       </div>
       
-      `
-      
-    }
-
+      `;
   }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-  function mychange(){
-    
-    let x = document.getElementById("myUPIn").value;
-    if(!x){
-      alert("Please Enter UPI ID");
-      return;
-    }
+}
 
-    parent.location='orderCompleted.html'
+function closeNav() {
+  let div = document.querySelector("#payment_optn");
+  div.classList.remove("darkAndDullBackgound");
+  document.getElementById("mySidenav").style.width = "0";
+}
+function mychange() {
+  let x = document.getElementById("myUPIn").value;
+  if (!x) {
+    alert("Please Enter UPI ID");
+    return;
   }
 
-  window.addEventListener("load", function () {
-    document.getElementById("myTotal1").innerText = "₹" + cartarr.CartTotal;
-      var myAdd = parseFloat(cartarr.CartTotal);
-      myAdd += 133;
-    document.getElementById("myTotal2").innerText = "₹" + myAdd;
-    
-    
-  });
-  function myMobile(){
-    let x = document.querySelector(".myMobile").value;
-    if(x<=999999999){
-      alert("Mobile No. should be 10 digits.");
-      return;
-    }
-    parent.location='orderCompleted.html'
+  parent.location = "orderCompleted.html";
+}
+
+window.addEventListener("load", function () {
+  document.getElementById("myTotal1").innerText = "₹" + CartTotal;
+  var myAdd = parseFloat(CartTotal);
+  myAdd += 133;
+  document.getElementById("myTotal2").innerText = `₹${myAdd.toFixed(2)}`;
+});
+function myMobile() {
+  let x = document.querySelector(".myMobile").value;
+  if (x <= 999999999) {
+    alert("Mobile No. should be 10 digits.");
+    return;
+  }
+  parent.location = "orderCompleted.html";
+}
+
+function myCard() {
+  let x = document.querySelector("#myCardNo").value;
+  if (x <= 999999999999999) {
+    alert("Card No. should be 16 digits.");
+    return;
   }
 
-  function myCard(){
-    let x = document.querySelector("#myCardNo").value;
-    if(x<=999999999999999){
-      alert("Card No. should be 16 digits.");
-      return;
-    }
-
-    let z = document.querySelector("#myValid").value;
-    if(!z){
-      alert("Please Enter Expiry Date.");
-      return;
-    }
-
-    let y = document.querySelector("#myCVV").value;
-    if(y<=99){
-      alert("CVV should be 3 digits.");
-      return;
-    }
-
-    let a = document.querySelector("#myName").value;
-    if(!a){
-      alert("Please Enter Name on Card.");
-      return;
-    }
-
-   parent.location='orderCompleted.html'
+  let z = document.querySelector("#myValid").value;
+  if (!z) {
+    alert("Please Enter Expiry Date.");
+    return;
   }
+
+  let y = document.querySelector("#myCVV").value;
+  if (y <= 99) {
+    alert("CVV should be 3 digits.");
+    return;
+  }
+
+  let a = document.querySelector("#myName").value;
+  if (!a) {
+    alert("Please Enter Name on Card.");
+    return;
+  }
+
+  parent.location = "orderCompleted.html";
+}
