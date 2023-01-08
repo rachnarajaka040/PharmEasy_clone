@@ -4,16 +4,23 @@ spsquery.textContent=medsquery
 
 
 let fetchMedData= async()=>{
-    let url=`https://concerned-red-jersey.cyclic.app/medisons?q=${medsquery}`
 
-    let res=await fetch(url)
-    let data= await res.json();
-    console.log(data);
-    displayData(data)
+    try{
+        let url=`https://concerned-red-jersey.cyclic.app/medisons?q=${medsquery}`
 
-    getManufacList(data)
-    getBrandList(data)
-    getSortOptions(data)
+        let res=await fetch(url)
+        let data= await res.json();
+        console.log(data);
+        displayData(data)
+    
+        getManufacList(data)
+        getBrandList(data)
+        getSortOptions(data)
+    }catch(err){
+        alert(err)
+        console.log(err)
+
+    }
 
 }
 let displayData=(mdata)=>{
@@ -80,6 +87,15 @@ let displayData=(mdata)=>{
             saveToCartfun(element)
             btn_cart.className="btninCart"
             btn_cart.textContent="Added To Cart"
+
+            let spCartCount=document.getElementById("spCartCount")
+    if(cartArr.length==1 || cartArr.length==0){
+        spCartCount.textContent=cartArr.length+" Item"
+    }else{
+        spCartCount.textContent=cartArr.length+" Items"
+    }
+
+
            }else{
             alert("Item Already Added To Cart")
            }
@@ -183,12 +199,17 @@ let getBrandList=(mdata)=>{
 
 
 let fetchFilteredData= async(url)=>{
-    let res=await fetch(url)
-    let data= await res.json();
-   // console.log(data);
-    displayData(data)
-    getSortOptions(data)
-    
+ 
+    try{
+        let res=await fetch(url)
+        let data= await res.json();
+       // console.log(data);
+        displayData(data)
+        getSortOptions(data)
+    }catch(err){
+        console.log(err)
+        alert(err)
+    }    
 
 }
 
