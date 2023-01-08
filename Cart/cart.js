@@ -108,7 +108,9 @@ function append(cartarr) {
 
 function billing(cartarr) {
   if (cartarr.length < 1) {
-    document.querySelector(".cart-right-upper-itemTotal").textContent = 0;
+    var cartTotal = 0;
+    localStorage.setItem("CartTotal", cartTotal);
+    document.querySelector(".cart-right-upper-itemTotal").textContent = "00.00";
     let div = document.querySelector(".cart-right-lower");
     div.setAttribute("class", "nodisplay");
   } else {
@@ -171,6 +173,6 @@ document
 
 function toCheckoutPage() {
   if (cartarr.length > 0) {
-    window.location.href = "https://www.google.com";
+    window.location.href = "../payment/payment.html";
   }
 }
