@@ -1,0 +1,389 @@
+
+ /* inter 400 */
+ /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-heading{
+    margin-top: 7.5rem;
+    text-align: center; 
+    font-weight: 450;
+}
+.main {
+    font-family: 'Inter', sans-serif;
+    margin: 40px;
+    background-color: #292a2c;
+}
+/* CSS for top navbar cards section or first section in the home page */
+ .top-navbar-slider {
+    margin-top: 1.7rem;
+    display: flex;
+    
+    justify-content: center;
+    column-gap: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.top-navbar-slider .slide {
+    display: flex;
+    justify-content: center;
+    height: 144px;
+    width: 132px;
+    text-align: center;
+}
+.top-navbar-slider .slide:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+.top-navbar-slider .slide hr {
+    margin: -4px 0 8px 0;
+    padding: 0;
+}
+.top-navbar-slider .slide .img{
+    height: 85px;
+    width: 100px;
+}
+.top-navbar-slider .slide .img img {
+    width: 100%;
+}
+.top-navbar-slider .slide .catagery-name{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #30363c;
+    text-decoration: none;
+}
+.top-navbar-slider .slide .offer{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    color:#f47779;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.top-navbar-slider .slide span {
+    text-decoration: none;
+}
+
+/* CSS for three-Big-Slide-section  or second section on home page*/
+
+.three-Big-Slide-section .slider {
+    display: flex;
+    column-gap: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 60px;
+}
+.three-Big-Slide-section .slider .slide {
+    height: 227px;
+    width:527px ;
+}
+.three-Big-Slide-section .slider .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.lab-tests-by-health-concern-section{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 30px;
+}
+.lab-tests-by-health-concern-section .upper-heading-and-img{
+    margin-bottom: 20px;
+}
+.lab-tests-by-health-concern-section .upper-heading-and-img .heading {
+    display: inline;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 600;
+    text-decoration: none solid rgb(48,54,60);
+}
+.lab-tests-by-health-concern-section .upper-heading-and-img .brand-img span {
+    font-size: 16px;
+    line-height: 24px;
+}
+.lab-tests-by-health-concern-section .upper-heading-and-img .brand-img img {
+    margin: 10px 0 -4px 4px;
+    height: 19px;
+    width: 95px;
+}
+.lab-tests-by-health-concern-section .parent{
+    display: flex;
+    flex-direction: column;
+} 
+.lab-tests-by-health-concern-section .parent .slider {
+    display: flex;
+    row-gap: 2rem;
+}
+.lab-tests-by-health-concern-section .slider .slide {
+    height: 186px;
+    width: 180px;
+}
+.lab-tests-by-health-concern-section .slider .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.offers-jsut-for-you-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 70px;
+}
+.offers-jsut-for-you-section .parent{
+    display: flex;
+    flex-direction: column;
+}
+.offers-jsut-for-you-section .parent .child1 .heading span {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+.offers-jsut-for-you-section .parent .child2 {
+    display: flex;
+    gap: 1.8rem;
+}
+.offers-jsut-for-you-section .parent .child2 .offer {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 336px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+.offers-jsut-for-you-section .parent .child2 .offer:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.offers-jsut-for-you-section .parent .child2 .offer .img-and-text{
+     display: flex;
+     margin-left: 18px;
+}
+.offers-jsut-for-you-section .parent .child2 .offer .img {
+    margin-right: 15px;
+    height: 48px;
+    width: 48px;
+}
+.offers-jsut-for-you-section .parent .child2 .offer .img img {
+    border-radius: 5px;
+    height: 48px;
+    width: 48px;
+}
+.offers-jsut-for-you-section .parent .child2 .offer .text span {
+    display: inline-block;
+    text-decoration: none;
+     font-size: 14px;
+     line-height: 24px;
+     font-weight: 500;
+}
+
+
+
+
+
+.Payment-offers-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 70px;
+}
+.Payment-offers-section .parent .second-parent .child1 {
+    margin-bottom: 30px;
+}
+.Payment-offers-section .parent .second-parent .child1 .heading span{
+   font-size: 26px;
+   line-height: 32px;
+   font-weight: 600;
+}
+.Payment-offers-section .parent .second-parent .child2 .slider {
+    display: flex;
+    column-gap: 2rem;
+}
+.Payment-offers-section .parent .second-parent .child2 .slider .slide {
+    height: 80px;
+    width: 428px;
+}
+.Payment-offers-section .parent .second-parent .child2 .slider .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+.Shop-by-Categories-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 0px;
+}
+.Shop-by-Categories-section .parent {
+    display: flex;
+    flex-direction: column;
+}
+.Shop-by-Categories-section .parent .child1 {
+    margin-bottom: 10px;
+}
+.Shop-by-Categories-section .parent .child1 .heading span {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.Shop-by-Categories-section .parent .child2 .slider {
+    display: flex;
+    column-gap: 20px;
+}
+.Shop-by-Categories-section .parent .child2 .slider .slide {
+    height: 230px;
+    width: 151px;
+}
+.Shop-by-Categories-section .parent .child2 .slider .slide .slide-child .img {
+    height:150px;
+    width: 151px;
+    border-radius: 9px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #E6EBF4;
+    margin-bottom: 11px;
+
+}
+.Shop-by-Categories-section .parent .child2 .slider .slide .slide-child .img:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.Shop-by-Categories-section .parent .child2 .slider .slide .slide-child .img img {
+    height:111px;
+    width: 117px;
+    padding-top: 10px;
+    margin-left: 14px;
+}
+.Shop-by-Categories-section .parent .child2 .slider .slide .slide-child span{
+    display:inline-block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    height: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+
+
+
+
+.New-Launches-section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 70px;
+}
+.New-Launches-section .parent .child1 {
+    margin-bottom: 40px;
+}
+.New-Launches-section .parent .child1 .heading {
+    margin-bottom: 10px;
+}
+.New-Launches-section .parent .child1 .heading .heading1 {
+     font-size: 26px;
+     line-height: 32px;
+     font-weight: 600;
+}
+.New-Launches-section .parent .child1+span {
+    font-size: 16;
+    line-height: 24px;
+}
+.New-Launches-section .parent .child2 .slider {
+    display: flex;
+}
+.New-Launches-section .parent .child2 .slider .slide-child1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height:180px;
+    width: 175px;
+    border: 1px solid #E6EBF4;
+    border-radius: 8px;
+    margin-bottom: 10px;
+} 
+.New-Launches-section .parent .child2 .slider .slide-child1:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+ 
+.New-Launches-section .parent .child2 .slider .slide-child1 span img {   
+    height:180px;
+    width: 130px;
+    padding: 24px 16px;
+} 
+.New-Launches-section .parent .child2 .slider .slide-child2 .first {
+   display: inline-block;
+   text-decoration: none;
+   color: black;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+   text-align: left;
+}
+.New-Launches-section .parent .child2 .slider .slide-child2 .second {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: #8897A2;
+}
+.New-Launches-section .parent .child2 .slider .slide-child2 .second .second1 {
+    display: inline-block;
+    text-decoration: none;
+    color: #8897A2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.New-Launches-section .parent .child2 .slider .slide-child2 .second .second2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #8897A2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: line-through;
+    
+}
+.New-Launches-section .parent .child2 .slider .slide-child2 .third {
+    display: inline-block;
+    text-decoration: none;
+}
+.New-Launches-section .parent .child2 .slider .slide-child2 .third .third1{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: black;
+    
+}
+.New-Launches-section .parent .child2 .slider .slide-child2 .third .third2{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #f47779;
+}
+
+
+
+
+
+
+
+
+
+
+
+
