@@ -150,7 +150,7 @@ h1 {
 #div_res {
   height: 660%;
   position: absolute;
-  top: 270px;
+  top: 250px;
   justify-content: center;
   z-index: 9;
   align-items: center;
@@ -166,6 +166,7 @@ h1 {
 
 #div_res > .con_res > .div_item {
   padding: 10px 10px;
+  cursor: pointer;
 }
 .div_item > .pname {
   font-weight: 600;

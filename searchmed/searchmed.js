@@ -11,10 +11,13 @@ let debSearch=()=>{
         clearTimeout(timeoutid)
     }
 
-    timeoutid=setTimeout(() => {
-       let fildata=filterByValue(dataobj,insearch.value)
-      console.log(fildata)
-      displayData(fildata)
+    timeoutid=setTimeout(async() => {
+        let url=`https://concerned-red-jersey.cyclic.app/medisons?q=${insearch.value}`
+
+        let res=await fetch(url)
+        let data= await res.json();
+        console.log(data);
+        displayData(data)
     }, 1000);
 
 
@@ -53,12 +56,18 @@ let displayData=(obj)=>{
         pname.className='pname'
         pdesc.className='pdesc'
 
+
         div_item.append(pname,pdesc)
-        con_res.append(div_item)
 
         div_item.onclick=()=>{
-            localStorage.setItem("pharmdata",JSON.stringify(element))
+            localStorage.setItem("medsquery",element.productname)
+    window.location.href="../productmed/products.html"
         }
+
+        
+        con_res.append(div_item)
+
+        
 
     });
 
@@ -232,3 +241,16 @@ let getAddressData=()=>{
 
 getAddressData();
 getCurrAdd();
+
+let btnSearchmed=document.getElementById("btnSearchmed")
+btnSearchmed.addEventListener("click",()=>{
+    
+    let insearch=document.getElementById("insearch")
+    if(insearch.value===''){
+        alert("Please Enter Valid search data")
+        return
+    }
+
+    localStorage.setItem("medsquery",insearch.value)
+    window.location.href="../productmed/products.html"
+})
