@@ -11,6 +11,7 @@ body {
   background-color: white;
   width: 100%;
   top: 0px;
+  z-index: 9;
 }
 
 .upper {
@@ -164,6 +165,7 @@ summary {
 }
 .healthcare-div-right {
   padding: 1rem;
+  background-color: white;
 }
 
 .healthcare-div-left {
