@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#pnavbar {
+  background-color: #10847e;
+  height: 90px;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  display: block;
+  box-sizing: border-box;
+}
+#pnavbar_child {
+  height: 50px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none solid rgb(79, 88, 94);
+  word-spacing: 0px;
+  justify-content: space-between;
+}
+
+#pnavbar_child > div {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+#payment_optn {
+  display: flex;
+  margin: 30px 0 0 0;
+  justify-content: space-around;
+}
+.paymentTxt {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(79, 88, 94);
+  line-height: 32.5px;
+}
+
+#payment_UPI > div {
+  line-height: 20px;
+  height: 75px;
+  width: 577px;
+  display: flex;
+  margin: 30px 0 30px 0;
+  align-items: center;
+}
+
+#payment_UPI > div > button {
+  background-color: #959595;
+  color: #ffffff;
+  border: #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 50px;
+  width: 1000px;
+}
+
+#payment_UPI > div > input {
+  border-color: #ecf0f7;
+  border-radius: 5px;
+  font-size: 16px;
+  height: 42px;
+  width: 1000px;
+  margin-right: 50px;
+}
+#paymentTotal {
+  margin-top: 3%;
+  width: 352px;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none solid rgb(79, 88, 94);
+}
+.paymrp {
+  color: #715d5e;
+}
+.stkmrp {
+  color: #8897a2;
+}
+.paymrpbx {
+  justify-content: space-between;
+}
+.paymentStyle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -20px;
+}
+.payimg {
+  height: 40px;
+  width: 40px;
+  margin-right: 30px;
+}
+#payfrom {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: space-between;
+}
+
+.darkAndDullBackgound {
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+/* slider */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #e6e6e6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.sidenav button:hover {
+  background-color: #10847e;
+  color: white;
+}
