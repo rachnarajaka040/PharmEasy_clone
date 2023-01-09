@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: #30363c;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  will-change: transform;
+  background-color: white;
+}
+
+.navbar {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0px;
+}
+
+.upper {
+  width: 90%;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+.upper > img {
+  width: 148;
+  height: 41;
+  fill: none;
+}
+
+.upper,
+.lower,
+.link-section,
+.link-section div a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-section {
+  gap: 1rem;
+}
+.link-section div img {
+  width: 24px;
+  margin-right: 1rem;
+}
+
+.link-section div a,
+.lower a {
+  text-decoration: none;
+  color: #30363c;
+}
+
+.link-section div a span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.search-bar-container {
+  padding: 5px 5px 5px 20px;
+  border: 1px solid #d7dfe5;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-container img {
+  width: 24px;
+  margin-right: 1rem;
+}
+
+.search {
+  width: 22rem;
+  font-size: 14px;
+  border-color: transparent;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.search-btn {
+  font-size: 14px;
+  width: 88px;
+  height: 40px;
+  background-color: #10847e;
+  color: white;
+  font-weight: 600;
+  border-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.search-btn:hover {
+  background-color: #0a534f;
+}
+
+hr {
+  height: 1px;
+  background-color: #d7dfe5;
+  border: none;
+}
+
+.lower {
+  justify-content: center;
+  gap: 2rem;
+  width: 91%;
+}
+summary {
+  outline: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lower a:hover,
+.lower details summary:hover {
+  color: #10847e;
+}
+
+.lower a span,
+.lower details summary span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.healthcare-div {
+  position: absolute;
+  max-height: 488px;
+  max-width: 1360px;
+  min-height: 488px;
+  display: grid;
+  grid-template: 1fr / max-content 1fr;
+  left: 50%;
+  right: 50%;
+  top: 109px;
+  transform: translate(-50%);
+  width: calc(100% - 2 * 40px);
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.healthcare-div-left-menuHeadings {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* margin-top: 1rem;
+  margin: 1rem; */
+}
+
+.healthcare-div-left-menuHeadings span {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+.healthcare-div-left-menuHeadings span:hover {
+  background-color: #dce4f1;
+  cursor: pointer;
+}
+
+.healthcare-div-left {
+  padding-top: 1rem;
+}
+.healthcare-div-right {
+  padding: 1rem;
+  background-color: white;
+}
+
+.healthcare-div-left {
+  background-color: rgb(245, 248, 252);
+}
+
+.healthcare-div-right-menuLinks div {
+  columns: 100px 4;
+  display: none;
+}
+
+.healthcare-div-right-menuLinks div span {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.healthcare-div-right-menuLinks div p {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.healthcare-div-right-menuLinks div div {
+  display: flex;
+  flex-direction: column;
+}
+
+div .configFlexDisplay {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

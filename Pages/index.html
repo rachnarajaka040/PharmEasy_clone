@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- appling favicon -->
+    <link rel="icon" href="https://assets.pharmeasy.in/apothecary/images/favicon.png">
+    <title>PharmEasy: Online Pharmacy & Medical Store in India</title>
+    
+    <!-- appliying google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- appling slick slider -->
+    <!-- slick-theme.min.css -->
+    <link rel="stylesheet" href="../Styles/slick-theme.css">
+    <!-- slick min.css -->
+     <link rel="stylesheet" href="../Styles/slick.css">
+
+    <!-- linking  index.css -->
+    <link rel="stylesheet" href="../Styles/index.css">
+    <!-- linking foooter css -->
+    <link rel="stylesheet" href="../Styles/footer.css">
+    <!-- linking  header.css -->
+    <link rel="stylesheet" href="../Header/header.css">
+    <!-- linking  header.js -->
+    <script type="module" src="../Script/index.js"> </script>
+
+</head>
+<body> 
+    <header>
+
+    </header>
+<main class="main-page"> 
+    <h2 class="first-heading">What are you looking for?</h2>
+
+    <!-- login and Signup code -->
+    <div class="bg-login-model">
+        <div class="modal-contents">
+            <div class="in-up-modal">
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" />
+                </div>
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg" />
+                </div>
+
+            </div>
+
+            <div class="close">
+                <div>+</div>
+            </div>
+            <form id="loginform">
+                <h3>LOGIN</h3>
+                <label for="UsearEmail">Email</label><br />
+                <input class="input" id="UsearEmail" type="email" />
+                <label for="Usearpassword">Password</label><br />
+                <input class="input" id="UserPassword" type="password"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" /><br />
+
+                <button id="submit" class="submit">SIGN IN</button>
+            </form>
+            <br>
+            <button class="to-Sign-up" id="submit">CREATE ACCOUNT</button>
+
+
+            <form id="newdis">
+            </form>
+
+        </div>
+    </div>
+
+    <div class="bg-signup-modal">
+        <div class="modal-contents-sign-up">
+            <div class="in-up-modal-sign-up">
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" />
+                </div>
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg" />
+                </div>
+
+            </div>
+
+            <div class="close-sign-up">
+                <div>+</div>
+            </div>
+
+            <form id="Signupform">
+                <h3>CREATE ACCOUNT</h3>
+                <label for="UserFirstName">First Name</label><br />
+                <input class="input" id="UserFirstName_signup" type="text" />
+                <label for="UserLastName">Last Name</label><br />
+                <input class="input" id="UserLastName_signup" type="text" />
+                <label for="UsearEmail">Email</label><br />
+                <input class="input" id="UsearEmail_signup" type="email" />
+                <label for="UserPassword">Password</label><br />
+                <input class="input" id="UserPassword_signup" type="password"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" /><br />
+                <button id="submit-signup">CREATE</button>
+            </form>
+
+            <form id="newdis-signup">
+            </form>
+
+        </div>
+    </div>
+
+
+    <section class="top-navbar-cards-section">
+          <div class="top-navbar-slider" style="column-gap: 2rem;">
+            <!-- 1.Medicine Card -->
+            <div class="slide">
+                <a href="searchmed.html">
+                    <div class="img">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=720x0" alt="Medicine">
+                    </div>
+                    <hr>
+                    <span class="catagery-name">Medicine</span> <br>
+                    <span class="offer">UPTO 20% OFF</span>
+                </a>
+            </div>
+            <!-- 2.Lab Tests Card -->
+            <div class="slide">
+                <a href="">
+                    <div class="img">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0" alt="Lab Tests">
+                    </div>
+                    <hr>
+                    <span class="catagery-name">Lab Tests</span><br>
+                    <span class="offer">UPTO 70% OFF</span>
+                </a>
+            </div>
+            <!-- 3.Healthcare Card -->
+            <div class="slide">
+                <a href="">
+                    <div class="img">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="Healthcare">
+                    </div>
+                    <hr>
+                    <span class="catagery-name">Healthcare</span><br>
+                    <span class="offer">UPTO 60% OFF</span>
+                </a>
+            </div>
+            <!-- 4.Surgeries Card -->
+            <div class="slide">
+                <a href="">
+                    <div class="img">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/offers_1_ff.webp?dim=256x0" alt="Surgeries">
+                    </div>
+                    <hr>
+                    <span class="catagery-name">Surgeries</span><br>
+                    <!-- <span class="offer">UPTO 20% OFF</span> -->
+                </a>
+            </div>
+             <!-- 5. Health Blogs Card -->
+            <div class="slide">
+                <a href="">
+                    <div class="img">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0" alt="Health Blogs">
+                    </div>
+                    <hr>
+                    <span class="catagery-name">Health Blogs</span><br>
+                    <!-- <span class="offer">UPTO 20% OFF</span> -->
+                </a>
+            </div>
+              <!-- 6. Plus Card -->
+            <div class="slide">
+                <a href="">
+                    <div class="img">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0" alt="Plus">
+                    </div>
+                    <hr>
+                    <span class="catagery-name">Plus</span><br>
+                    <span class="offer">SAVE 5% EXTRA</span>
+                </a>
+            </div>
+             <!-- 7.Offers Card -->
+            <div class="slide">
+                <a href="">
+                    <div class="img">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0" alt="Offers">
+                    </div>
+                    <hr>
+                    <span class="catagery-name">Offers</span><br>
+                    <!-- <span class="offer">Offers</span> -->
+                </a>
+            </div>
+             <!-- 8. Value Store Card -->
+            <div class="slide">
+                <a href="">
+                    <div class="img">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0" alt="Value Store">
+                    </div>
+                    <hr>
+                    <span class="catagery-name">Value Store</span><br>
+                    <span class="offer">UPTO 50% OFF</span>
+                </a>
+            </div>
+
+          </div>
+    </section>
+
+
+
+
+
+
+    <section class="three-Big-Slide-section">
+        <div class="slider">
+            <!-- Pocket Easy Days slide-->
+            <div class="slide">
+                <a href="#">
+                    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/88d47b91f22-02.jpg" alt="Pocket Easy Days">
+                </a>
+            </div>
+            <!-- Book Comprehensive Full Body Checkup Slide-->
+            <div class="slide">
+                <a href="#">
+                    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/bfdbe58dbce-YAY550_Pocketeasy_HP_634x274.jpg" alt="Full Body Checkup">
+                </a>
+            </div>
+            <!-- Take spacial care of your feet in winter Slide -->
+            <div class="slide">
+                <a href="#">
+                    <img src="https://cdn01.pharmeasy.in/dam/banner/banner/2fc3d6fda7a-WhatsApp.jpeg" alt="Take spacial care of your feet in winter">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="lab-tests-by-health-concern-section">
+        <div class="parent">
+            <div class="upper-heading-and-img">
+                <h2 class="heading">Lab Tests by Health Concern</h2>
+                <div class="brand-img">
+                    <span>Powered by</span>
+                    <img src="https://assets.pharmeasy.in/apothecary/images/Thyrocare.webp?dim=1440x0" alt="Thyrocare Img">
+                </div>
+            </div>
+            <div class="slider">
+                <!-- 1.Full Body Checkups card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/fc7cb3e07e2-checkups.png?dim=360x0" alt="Full Body Checkups">
+                    </a>
+                </div>
+                <!--2. Vitamins Card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/6c5479c6c0c-Vitamins.jpg?dim=360x0" alt="Vitamins">
+                    </a>
+                </div>
+                <!--3. Diabetes Card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/69588f95674-Diabetes.jpg?dim=360x0" alt="Diabetes">
+                    </a>
+                </div>
+                <!-- 4.Thyroid Card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/c507b2563fd-thyroid.png?dim=360x0" alt="Thyroid">
+                    </a>
+                </div>
+                <!-- 5.Women Care Card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/eeb3fe3251f-WomenCare.jpg?dim=360x0" alt="Women Care">
+                    </a>
+                </div>
+                <!--6. Fever and Infection Card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/355e9b77fb5-FeverInfection.jpg?dim=360x0" alt="Fever and Infection">
+                    </a>
+                </div>
+                <!--7. Covid Care Card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/6e78a241e48-CovidCare.jpg?dim=360x0" alt="Covid Care">
+                    </a>
+                </div>
+                <!--8. Heart Card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/a953829ca96-Heart.jpg?dim=360x0" alt="Heart">
+                    </a>
+                </div>
+                <!-- 9.Lifestyle Card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/94616a36a9a-Lifestyle.jpg?dim=360x0" alt="Lifestyle">
+                    </a>
+                </div>
+                <!--10. BoneHealth Card -->
+                <div class="slide">
+                    <a href="#">
+                        <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/64444851b5e-BoneHealth.jpg?dim=360x0" alt="BoneHealth">
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+
+
+
+    <section class="offers-jsut-for-you-section">
+        <div class="parent">
+            <div class="child1">
+                <h2 class="heading">
+                    <span>Offers Just for You</span>
+                </h2>
+            </div>
+            <div class="child2">
+                  <div class="offer">
+                    <a href="#">
+                        <div class="img-and-text">
+                            <div class="img"><img src="https://cms-contents.pharmeasy.in/offer/32bd63c6305-25_off.jpg?dim=1440x0" alt="flat 25% off"></div>
+                            <div class="text"> <span>FLAT 25% OFF + FREE DELIVERY on <br> first 3 medicine orders</span></div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="offer">
+                    <a href="#">
+                        <div class="img-and-text">
+                            <div class="img"><img src="https://cms-contents.pharmeasy.in/offer/71e36ddc397-flat_27_off.jpg?dim=1440x0" alt="flat 27% off"></div>
+                            <div class="text"> <span>FLAT 25% OFF + up to Rs.5000 <br> surprise cashback</span></div>
+                        </div>
+                    </a>
+                  </div>
+                  <div class="offer">
+                    <a href="#">
+                        <div class="img-and-text">
+                            <div class="img"><img src="https://cms-contents.pharmeasy.in/offer/32bd63c6305-25_off.jpg?dim=1440x0" alt="flat 25% off"></div>
+                            <div class="text"> <span> Log in to view more offers</span></div>
+                        </div>
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="Payment-offers-section">
+        <div class="parent">
+            <div class="second-parent">
+                <div class="child1">
+                        <h2 class="heading">
+                            <span>Payment offers</span>
+                        </h2>
+                </div>
+                <div class="child2">
+                       <div class="slider">
+                           <!--1. HSBC Discount -->
+                           <div class="slide">
+                              <a href="#">
+                                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/a93d45ef9eb-HSBC.jpg?dim=1440x0" alt="HSBC -flat 10% discount up to 150rs">
+                              </a>
+                           </div>
+                           <!--2. Citi bank discount -->
+                           <div class="slide">
+                            <a href="#">
+                              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/9d72c75f078-CITI.jpg?dim=1440x0" alt=" Up to 600rs instant saving">
+                            </a>
+                         </div>
+                         <!--3.AU SMALL FINANCE BANK  -->
+                         <div class="slide">
+                            <a href="#">
+                              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/9466405c308-au.jpg?dim=1440x0" alt="Au Small Finance bank- flat 150rs off ">
+                            </a>
+                         </div>
+                         <!-- FREECHARGE -->
+                         <div class="slide">
+                            <a href="#">
+                              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/3b8a5707399-FREECHARGE.jpg?dim=1440x0" alt=" Freecharge -Get 10% Discount">
+                            </a>
+                         </div>
+                         <!-- Airtel Payments Bank -->
+                         <div class="slide">
+                            <a href="#">
+                              <img src="https://cdn01.pharmeasy.in/dam/banner/banner/7297689b914-AIRTEL.jpg?dim=1440x0" alt=" Airtel Payment bank -Flat 80rs Cashback">
+                            </a>
+                         </div>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+      <section class="Shop-by-Categories-section">
+        <div class="parent">
+            <div class="child1">
+                <div class="heading">
+                    <span>Shop by Categories</span>
+                </div>
+            </div>
+            <div class="child2">
+                <div class="slider">
+                    <!-- 1  -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/6d462f424a43372ea8b7b6f8ca13e052.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span>Covid essentials</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/bde7d1752b5e3cd69f42157f4d578535.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span>Mega clearance sale</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1e622b0308ec3ab48887512eaa3488a5.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span>Personal care</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 4 -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/cfc8ee511609321e91eb86a34f5b2885.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span>Healthcare devices</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 5 -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/335dae76832d370c94f0440f5ba89e1f.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span> Health food and  drinks</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 6 -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/dc96175686f135b5a22d1e57165d0246.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span> Home care</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 7 -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f692f7243b8036ed97d99a7973dd42b3.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span> Mother and baby care</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 8 -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/105ceca515ee30509f93309ae75306aa.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span> Diabetic care</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 9 -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/514d0d7d01a63502b4ebfec9ae26f4d2.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span>Fitness supplements</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 10 -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child">
+                                <div class="img">
+                                    <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/154dec0567b23244b7dcbf2158d39eee.png?f=png?dim=360x0" alt="Covid essentials">
+                                </div>
+                                <span> Skin care</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> 
+     
+
+
+     <section class="New-Launches-section">
+        <div class="parent">
+            <div class="child1">
+                <div class="heading">
+                    <h2 class="heading1">
+                        <span>New Launches</span>
+                    </h2>
+                </div>
+                <span>New wellness range just for you!</span> 
+            </div>
+            <div class="child2">
+                <div class="slider">
+                    <!-- first item -->
+                    <div class="slide">
+                        <a href="">
+                            <div class="slide-child1">
+                                <span>
+                                    <img src="https://cdn01.pharmeasy.in/dam/products_otc/R36225/supradyn-immuno-multivitamin-immunity-booster-zinc-tulsi-turmeric-shatavari-ashoka-10-tab-2-1668404435.jpg?dim=1280x0" alt="">
+                                </span>
+                            </div>
+                            <div class="slide-child2">
+                                <span class="first"> Sypradyn Immuno + Multivitamin Immu...</span>
+                                <div class="second">
+                                    <span class="second1">MRP</span>
+                                    <span class="second2">₹95.00</span>
+                                </div>
+                                <div class="third">
+                                    <span class="third1">₹85.00</span>
+                                    <span class="third2">10% OFF</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                   <!-- Second Product --> 
+                   <div class="slide">
+                     <a href="">
+                        <div class="slide-child1">
+                            <span>
+                                <img src="https://cdn01.pharmeasy.in/dam/products_otc/E22952/pharmeasy-apple-cider-vinegar-with-mother-improves-metabolism-500ml-bottle-2-1670992890.jpg?dim=1440x0" alt="">
+                            </span>
+                        </div>
+                        <div class="slide-child2">
+                            <span class="first"> Pharmeasy Apple Cider Vinegar With...</span>
+                            <div class="second">
+                                <span class="second1">MRP</span>
+                                <span class="second2">₹649.00</span>
+                            </div>
+                            <div class="third">
+                                <span class="third1">₹324.50</span>
+                                <span class="third2">50% OFF</span>
+                            </div> 
+                        </div>
+                      </a>
+                   </div>
+                   <!-- Third Product -->
+                   <div class="slide">
+                     <a href="">
+                       <div class="slide-child1">
+                           <span>
+                               <img src="https://cdn01.pharmeasy.in/dam/products_otc/G72534/whisper-ultra-soft-air-fresh-xl-plus-sanitary-pads-15-nos-2-1671258850.jpg?dim=1440x0" alt="">
+                           </span>
+                       </div>
+                       <div class="slide-child2">
+                           <span class="first"> Whisper Ultra Soft Air Fresh Xl Plus Sanit...</span>
+                           <div class="second">
+                               <span class="second1">MRP</span>
+                               <span class="second2">₹180.00</span>
+                           </div>
+                           <div class="third">
+                               <span class="third1">₹171.00</span>
+                               <span class="third2">5% OFF</span>
+                           </div> 
+                       </div>
+                     </a>
+                   </div>
+                   <!-- Forth Product -->
+                   <div class="slide">
+                     <a href="">
+                      <div class="slide-child1">
+                          <span>
+                              <img src="https://cdn01.pharmeasy.in/dam/products_otc/M48761/baidyanath-nagpur-amla-juice-1-l-natural-immunity-booster-enriched-with-vitamin-c-no-added-sugar-2-1671743463.jpg?dim=1440x0" alt="">
+                          </span>
+                      </div>
+                      <div class="slide-child2">
+                          <span class="first"> Baidyanath- Nagpur Amla Juice-1-L-...</span>
+                          <div class="second">
+                              <span class="second1">MRP</span>
+                              <span class="second2">₹220.00</span>
+                          </div>
+                          <div class="third">
+                              <span class="third1">₹198.00</span>
+                              <span class="third2">10% OFF</span>
+                          </div> 
+                      </div>
+                     </a>
+                    </div>
+                  <!-- Fifth Product -->
+                  <div class="slide">
+                    <a href="">
+                      <div class="slide-child1">
+                          <span>
+                              <img src="https://cdn01.pharmeasy.in/dam/products_otc/R78914/fash-x-gel-face-wash-200ml-2-1670827713.jpg?dim=1440x0" alt="">
+                          </span>
+                      </div>
+                      <div class="slide-child2">
+                          <span class="first"> New Fash X Gel Face Wash 200ml</span>
+                          <div class="second">
+                              <span class="second1">MRP</span>
+                              <span class="second2">₹475.00</span>
+                          </div>
+                          <div class="third">
+                              <span class="third1">₹361.00</span>
+                              <span class="third2">24% OFF</span>
+                          </div> 
+                      </div>
+                     </a>
+                  </div>
+                  <!-- Sixth Product -->
+                  <div class="slide">
+                    <a href="">
+                      <div class="slide-child1">
+                          <span>
+                              <img src="https://cdn01.pharmeasy.in/dam/products_otc/F80687/nicotex-2mg-mint-plus-gums-sugar-free-strip-of-9-pack-of-4-2-1671745141.jpg?dim=1440x0" alt="">
+                          </span>
+                      </div>
+                      <div class="slide-child2">
+                          <span class="first">Nicotex 2mg Mint Plus Gums Sugar Free St...</span>
+                          <div class="second">
+                              <span class="second1">MRP</span>
+                              <span class="second2">₹404.00</span>
+                          </div>
+                          <div class="third">
+                              <span class="third1">₹303.00</span>
+                              <span class="third2">25% OFF</span>
+                          </div> 
+                      </div>
+                    </a>
+                  </div>
+                  <!-- seventh product -->
+                  <div class="slide">
+                    <a href="">
+                      <div class="slide-child1">
+                          <span>
+                              <img src="https://cdn01.pharmeasy.in/dam/products_otc/E78959/cureskin-spf30-sunscreen-50gm-2-1669781661.jpg?dim=1440x0" alt="">
+                          </span>
+                      </div>
+                      <div class="slide-child2">
+                          <span class="first">Cureskin Spf30 Sunscreen 50gm</span>
+                          <div class="second">
+                              <span class="second1">MRP</span>
+                              <span class="second2">₹500.00</span>
+                          </div>
+                          <div class="third">
+                              <span class="third1">₹450.00</span>
+                              <span class="third2">10% OFF</span>
+                          </div> 
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Eight product -->
+                  <div class="slide">
+                    <a href="">
+                      <div class="slide-child1">
+                          <span>
+                              <img src="https://cdn01.pharmeasy.in/dam/products_otc/N95684/sugar-free-gold-pellet-500-nos-2-1671743998.jpg?dim=1440x0" alt="">
+                          </span>
+                      </div>
+                      <div class="slide-child2">
+                          <span class="first">Sugar Free Gold Pellet 500</span>
+                          <div class="second">
+                              <span class="second1">MRP</span>
+                              <span class="second2">₹300.00</span>
+                          </div>
+                          <div class="third">
+                              <span class="third1">₹250.00</span>
+                              <span class="third2">17% OFF</span>
+                          </div> 
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Nineth Product -->
+                  <div class="slide">
+                    <a href="">
+                      <div class="slide-child1">
+                          <span>
+                              <img src="https://cdn01.pharmeasy.in/dam/products_otc/E97814/sugar-free-natura-pellet-200-nos-2-1669362330.jpg?dim=1440x0" alt="">
+                          </span>
+                      </div>
+                      <div class="slide-child2">
+                          <span class="first">Sugar Free Natura Pellet-200</span>
+                          <div class="second">
+                              <span class="second1">MRP</span>
+                              <span class="second2">₹130.00</span>
+                          </div>
+                          <div class="third">
+                              <span class="third1">₹100.00</span>
+                              <span class="third2">26% OFF</span>
+                          </div> 
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Tenth Product -->
+                  <div class="slide">
+                    <a href="">
+                      <div class="slide-child1">
+                          <span>
+                              <img src="https://cdn01.pharmeasy.in/dam/products_otc/Z28797/manforce-xotic-condoms-chocolate-10s-2-1666067207.jpg?dim=1440x0" alt="">
+                          </span>
+                      </div>
+                      <div class="slide-child2">
+                          <span class="first">Manforce Xotic Condoms(Chocolate)...</span>
+                          <div class="second">
+                              <span class="second1">MRP</span>
+                              <span class="second2">₹90.00</span>
+                          </div>
+                          <div class="third">
+                              <span class="third1">₹76.00</span>
+                              <span class="third2">15% OFF</span>
+                          </div> 
+                      </div>
+                    </a>
+                  </div>
+            </div>
+        </div>
+     </section>
+</main>
+<footer></footer>
+
+
+
+    <!-- jqueary cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- slick carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script src="../Script/index.slickslider.js"></script>
+</body>
+</html>

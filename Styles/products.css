@@ -1,0 +1,343 @@
+* {
+    font-family: "Open Sans", sans-serif;
+  }
+
+
+.div_pr_maincon{
+    display: flex;
+    
+    width: 100%;
+    margin: auto;
+    position: relative;
+    margin-top: 8%;
+}
+.div_pr_maincon>.div_pr_subcon1{
+    
+    width: 40%;
+    overflow: auto;
+    margin-left: 10px;
+   
+    position: relative;
+}
+.div_pr_subcon1>h2{
+    font-weight: 500;
+    color: #3e4040;
+}
+.div_pr_subcon1>h2>span{
+    font-weight: 700;
+}
+.div_pr_maincon>.div_pr_subcon3{
+    
+    
+    width: 25%;
+    position: relative;
+    
+
+}
+
+.div_pr_maincon>.div_pr_subcon2{
+   width: 30%;
+   
+   position: fixed;
+   
+   right: 20px;
+}
+footer{
+    position: absolute;
+    width: 100%;
+}
+.div_pr_card{
+    display: flex;
+    border: 1px solid rgb(195, 199, 199);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.div_pr_card>div:nth-child(1) img{
+    width: 80px;
+}
+
+.div_pr_details{
+    width: 100%;
+    margin-left: 20px;
+}
+.div_pr_details h2{
+    margin: 0;
+    color: #3e4040;
+    font-size: 20px;
+    
+}
+.div_pr_details>div>div>h3{
+    
+    color: #3e4040;
+    font-size: 18px;
+    
+}
+.div_pr_details> p:nth-child(2){
+    color: rgb(155, 151, 151);
+    
+}
+.div_pr_details>p:nth-child(3){
+   
+    margin: 0;
+}
+.div_pr_details>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.div_pr_details>div>div{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+}
+.div_pr_details>div>div>p{
+    font-size: 12px;
+    margin-left: 10px ;
+    color: rgb(149, 147, 147);
+
+}
+.div_pr_details>div>div>p>span{
+    text-decoration: line-through;
+}
+
+.div_pr_details>div>div>span{
+    background-image: url(https://assets.pharmeasy.in/web-assets/_next/icons/pdp-discount.png);
+
+    margin-left: 10px;
+    font-size: 10px;
+    padding: 5px 14px 5px 5px;
+    font-weight: 700;
+    color: white;
+    
+}
+.div_pr_details>div>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.div_pr_details>div>div>button{
+    background-color: #10847e;
+    padding: 10px 18px;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+.div_pr_details>div>div>button:hover{
+    background-color: #189a93;
+}
+.div_pr_details>div>div>.btninCart{
+    background-color: #d9f2f0;
+    color: #10847e;
+}
+
+
+.div_pr_subcon2{
+
+
+}
+.div_pr_subcon2>h3{
+    font-weight: 500;
+    color: #454646;
+}
+.div_pr_subcon2>button{
+    background-color: #10847e;
+    padding: 10px 18px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.div_pr_subcon2>button:hover{
+    background-color: #043432;
+}
+
+
+.div_pr_subcon2>.div_pr_sub2{
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgb(177, 175, 174);
+    width: 100%;
+    box-sizing: border-box;
+    
+    align-items: center;
+    margin-top: 20px;
+}
+.div_pr_subcon2>.div_pr_sub2>div:nth-child(1){
+
+    display: flex;
+    align-items: center;
+}
+.div_pr_subcon2>.div_pr_sub2>div>img{
+    background-color: #eb8519;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    
+}
+.div_pr_subcon2>.div_pr_sub2>div>h3{
+    margin: 0;
+    color: rgb(60, 56, 56);
+    font-size: 14px;
+    margin-left: 15px;
+    font-weight: 500;
+    
+}
+.div_pr_subcon2>.div_pr_sub2>div>div{
+    display: flex;
+    align-items: center;
+}
+.div_pr_subcon2>.div_pr_sub2>div>div>p{
+    margin-left: 30px;
+}
+
+#div_rdman{
+    display: block;
+}
+.div_filter input[type="radio"]{
+    display: none;
+    
+ }
+ .div_filter{
+   
+ }
+ .div_man_head{
+    padding: 30px;
+ }
+ .div_man_head>h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: #454646;
+ }
+
+ .div_filter label{
+    margin-bottom: 10px;
+    
+    padding: 5px 10px 5px 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    color: #454646;
+    font-size: 13px;
+    
+    border: solid 1px rgb(199, 199, 199);
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    }
+ 
+.div_filter input[type="radio"]:checked + label{
+    background-color: #edf9f8;
+    border: 1px solid #10847e;
+    color: #10847e;
+
+
+  }
+
+  #div_head_name{
+    justify-content: space-between;
+    display: flex;
+  }
+  #div_head_name>img{
+    background-color: #d8d3ce;
+      border-radius: 50%;
+      padding: 5px;
+      width: 20px;
+    
+  }
+
+  @media only screen and (max-width: 900px) and (min-width: 550px){
+    .div_pr_maincon{
+        display: block;
+        
+    }
+    .div_pr_maincon>.div_pr_subcon1{
+    
+        width: 80%;
+        margin: auto;
+       
+       
+    }
+
+    .div_pr_maincon>.div_pr_subcon3{
+    
+    
+        width: 80%;
+        
+        margin: auto;
+        margin-top: 20%;
+        
+        
+       
+        
+    
+    }
+
+    .div_pr_maincon>.div_pr_subcon2{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        right: 0;
+     }
+     footer{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) and (min-width: 0px){
+
+    footer{
+        display: none;
+    }
+    .div_pr_maincon{
+        display: block;
+        
+    }
+    .div_pr_maincon>.div_pr_subcon1{
+    
+        width: 80%;
+        margin: auto;
+       
+       
+    }
+
+    .div_pr_maincon>.div_pr_subcon3{
+    
+    
+        width: 80%;
+        
+        margin: auto;
+        margin-top: 40%;
+        
+        
+       
+        
+    
+    }
+
+    .div_pr_maincon>.div_pr_subcon2{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        right: 0;
+     }
+
+     .div_pr_details>div{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .div_pr_details>div>div>button{
+        width: 100%;
+    }
+
+}

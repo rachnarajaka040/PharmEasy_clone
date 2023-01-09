@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button><a href="./cart.html" target="_blank">Go to Cart</a></button>
+  <button class="addToCart">add to Cart</button>
+</body>
+<script type="module">
+  import { arr } from "./data.js"
+  var cartarr = JSON.parse(localStorage.getItem("cartarr")) || [];
+  document.querySelector('.addToCart').addEventListener("click", test);
+
+
+  async function getData() {
+    let url = `https://concerned-red-jersey.cyclic.app/medisons?q=`;
+    let request = {
+      method: "POST",
+      body: JSON.stringify({
+        "productname": "Crocin 650mg Advance Tablets 15'S",
+        "price": "29.13",
+        "MRP": "34.27",
+        "offer": "15",
+        "description": "15 Tablet(s) in Strip",
+        "contains": "Paracetamol / Acetaminophen(650.0 Mg)",
+        "therapy": "GLAXOSMITHKLINE CONSUMER",
+        "uses": "Pain and fever",
+        "side_effects": "Skin rash, itching, blisters",
+        "Brand": "CROCIN",
+        "Expiry": "29/04/2024",
+        "prescription": "no",
+        "img1": "https://cdn01.pharmeasy.in/dam/products/I43006/crocin-650mg-advance-tab-15s-2-1641538269.jpg?dim=320x320&dpr=1&q=100",
+        "img2": "https://cdn01.pharmeasy.in/dam/products/I43006/crocin-650mg-advance-tab-15s-7-1641538266.jpg",
+        "img3": "https://cdn01.pharmeasy.in/dam/products/I43006/crocin-650mg-advance-tab-15s-2-1641538270.jpg",
+        "manufacturer": "GLAXO SMITH KLINE",
+        "quantity": "1",
+      }),
+      headers: { "Content-type": "application/json" }
+    }
+
+
+    let fetchData = await fetch(url);
+    let data = await fetchData.json();
+    console.log(data);
+  }
+
+  function test() {
+    // cartarr.push(arr[0]);
+    // cartarr.push(arr[1]);
+    // localStorage.setItem("cartarr", JSON.stringify(cartarr));
+    arr.map((element) => {
+      cartarr.push(element);
+      localStorage.setItem("cartarr", JSON.stringify(cartarr));
+    })
+
+  }
+
+</script>
+
+</html>

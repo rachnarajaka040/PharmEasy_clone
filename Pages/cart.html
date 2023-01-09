@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Medicine Online - Cart</title>
+    <script src="https://kit.fontawesome.com/1d73357de3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Styles/cart.css">
+
+      <!-- linking foooter css -->
+      <link rel="stylesheet" href="../Styles/footer.css">
+      <!-- linking  header.css -->
+      <link rel="stylesheet" href="../Header/header.css">
+</head>
+
+<body>
+    <header></header>
+    <section class="cart-section">
+        <div class="navigator">
+            <a href="index.html">
+                <p>Home</p>
+            </a>
+            <p>Cart</p>
+        </div>
+        <div class="cart-container">
+            <div class="cart-left">
+                <div class="cart-left-noOfItemsDiv">
+                    <h1><span class="cart-left-noOfItems"></span> Items in your Cart</h1>
+                </div>
+                <div class="cart-left-cartItems"></div>
+            </div>
+            <div class="cart-right">
+                <div class="cart-right-upper">
+                    <div>
+                        <p>Cart Total:<span class="cart-right-upper-itemTotal"></span></p>
+                    </div>
+                    <div>
+                        <button class="proceedToCheckout-btn">Proceed to Checkout</button>
+                    </div>
+                </div>
+                <div class="cart-right-lower">
+                    <div>
+                        <h1>Bill Summary</h1>
+                    </div>
+                    <div>
+                        <div>
+                            <p>CartValue</p>
+                            <span class="cart-right-lower-itemTotal"></span>
+                        </div>
+                        <!-- <div><p>Discount</p><span class="cart-right-lower-discount"></span></div> -->
+                    </div>
+                    <hr>
+                    <div class="cart-right-lower-tobePaidDiv">
+                        <p>Amount to be paid</p>
+                        <span class="cart-right-lower-tobePaid"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>
+<script  type="module" src="../Script/cart.js"></script>
