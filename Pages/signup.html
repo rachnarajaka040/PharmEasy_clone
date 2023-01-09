@@ -7,14 +7,17 @@
     <link rel="icon" type="image/png" href="images/pharmeasyfavicon.png">
     <title>Log in</title>
     <style>
-        
+        /* body{
+            background-image:linear-gradient(red,pink,green,aqua);
+            
+        } */
          #signs{
             display: flex;
             justify-content: right;
 
         }
 
-   .bg-modal {
+.bg-modal {
 	background-color: rgba(0, 0, 0, 0.8);
 	width: 100%;
 	height: 100%;
@@ -37,7 +40,7 @@
 }
 .modal-contents>form>h2{
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 13px;
     margin-left: 25px;
     color: #4F585E;
     margin-top: 20px;
@@ -52,6 +55,21 @@ input {
 	padding: 8px;
 	border: 1px solid gray;
     border-radius: 5px;
+}
+#submit
+{
+    margin-left:25px;
+    width: 85%;
+    height:38px;
+	padding: 8px; 
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+label
+{
+    margin-left:25px;
 }
 .close{
     background-color: #10847e;
@@ -133,7 +151,7 @@ input+p{
     line-height: 15px;
 }
 #newdis>div>h2{
-    font-size:25px;
+    font-size: 16px;
     /* margin-left: 8%;
     margin-top: 5%; */
     color: #4F585E;
@@ -141,10 +159,10 @@ input+p{
     margin-top: 20px;
 }
 
-#newdis>div>div{
-  
+/* #newdis>div>div{
+    display: flex;
     justify-content: space-evenly;
-}
+} */
 #newdis>div>div>input{
     width:80%;
     height: 20px;
@@ -203,6 +221,10 @@ input+p{
     padding: 8px 35px;
     height:30px;
 }
+h3
+{
+    text-align: center;
+}
     </style>
 </head>
 <body>
@@ -213,25 +235,31 @@ input+p{
         <div class="modal-contents">
             <div class="in-up-modal">
                 <div>
-                    <img src="https://assets.pharmeasy.in/web-assets/images/loginLogo.svg"/>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png"/>
                 </div>
                 <div>
                     <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg"/>
                 </div>
                 
             </div>
-              
+    
             <div class="close">
                 <div>+</div>
             </div>
-                 <form id="form" action="">
-                <h2>Enter your mobile number</h2>
-                <input type="text" placeholder="+91 Enter your phone number" id="phonenum">
-                <!-- <button href="#" class="button">Submit</button> -->
-                <input type="submit" id="asdfg" value="SignUp">
-                <p>By clicking continue, you agree to our Privacy Policy</p>
-                <p id="display"> </p>
-            </form>
+    
+            <form id="loginform" onsubmit="register(event)">
+                <h3>CREATE ACCOUNT</h3>
+                <label for="UserFirstName">First Name</label><br />
+                <input class="input" id="UserFirstName" type="text" />
+                <label for="UserLastName">Last Name</label><br />
+                <input class="input" id="UserLastName" type="text" />
+                <label for="UsearEmail">Email</label><br />
+                <input class="input" id="UsearEmail" type="email" />
+                <label for="UserPassword">Password</label><br />
+                <input class="input" id="UserPassword" type="password"  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" /><br />
+                <button id="submit">CREATE</button>
+              </form>
+
             <form id="newdis">
             </form>
     
@@ -250,99 +278,88 @@ document.querySelector('.close').addEventListener("click", function() {
 // document.querySelector('.bg-modal').addEventListener("click", function() {
 // 	document.querySelector('.bg-modal').style.display = "none";
 // }); 
-document.querySelector('#form').addEventListener("submit",inputs)
+const register=(event)=>{
+   event.preventDefault()
+   let form = document.getElementById("loginform")
+   let First = form.UserFirstName.value
+   let Last  = form.UserLastName.value
+   let Email = form.UsearEmail.value
+   let Password = form.UserPassword.value
+   let user = {
+     First,
+     Last,
+     Email,
+     Password
+   }
+   console.log(First, Last, Email, Password);
+   if(First!=="" & Last!=="" & Email!=="" & Password!==""){
+     let Users = JSON.parse(localStorage.getItem("Users")) || [];
+     Users.push(user)
+     localStorage.setItem("Users",JSON.stringify(Users))
+     window.location.href="login.html"
+   }else{
+     alert(" Please Enter All Information")
+   }
 
+ }
 
-
-function inputs(event){
-    event.preventDefault();
-    let phone=document.querySelector('#phonenum').value;   
-    let modi=Math.floor(phone);
-    //console.log(modi.length)
-    if(typeof(modi)==='number'){
-        if(phone.length===10){
-            //console.log(modi)
-            //document.getElementById("phonenum").innerHTML="";
-            newdiss(event)
-            //document.querySelector('#newdis').a
-        } 
-        else{
-            // console.log("wrong number")
-            // var card=document.createElement("div");
-            document.querySelector('#display').innerText="Wrong number";
-        }
-    }  
-    else{
-        //console.log("wrong character")
-        document.querySelector('#display').innerText="Wrong character";
-    }
-}
+// document.getElementById("submit").addEventListener("click",movetoregister)
 
 //document.querySelector('.button').addEventListener('click',newdiss)
 
-function newdiss(event){
-    document.querySelector('form').innerHTML="";
-    //console.log("gfghj")
-    event.preventDefault()
+// function newdiss(event){
+//     document.querySelector('form').innerHTML="";
+//     //console.log("gfghj")
+//     event.preventDefault()
     
-    var card=document.createElement("div")
+//     var card=document.createElement("div")
 
-    var heading=document.createElement("h2")
-    heading.innerText="SignIn";
+//     var heading=document.createElement("h2")
+//     heading.innerText="login";
 
-    var innercard=document.createElement("div");
-    var inputotp1=document.createElement("input");
-    inputotp1.innerText="";
-    inputotp1.placeholder="enter your name";
+//     var innercard=document.createElement("div");
+//     var inputotp1=document.createElement("input");
+//     inputotp1.innerText="";
+//     inputotp1.placeholder="Email";
 
-    var inputotp2=document.createElement("input");
-    inputotp2.innerText="";
-    inputotp2.placeholder="enter your password";
-
-    var inputotp3=document.createElement("input");
-    inputotp3.innerText="";
-    inputotp3.placeholder="enter your confirm password";
+//     var inputotp2=document.createElement("input");
+//     inputotp2.innerText="";
+//     inputotp2.placeholder="Password";
    
 
-    innercard.append(inputotp1,inputotp2,inputotp3);
+//     innercard.append(inputotp1,inputotp2);
 
-    // var innercardtext=document.createElement("div");
-    // var leftw=document.createElement("p")
-    // leftw.innerText="Change Number";
+   
 
-    // var rightw=document.createElement("p")
-    // rightw.innerText="Resend Otp";
-
-    // innercardtext.append(leftw,rightw);
-
-    var inputsubmit=document.createElement("input");
-    inputsubmit.innerText="Continue";
-    inputsubmit.setAttribute("type","submit")
-    inputsubmit.setAttribute("id","continuebtn")
-    inputsubmit.setAttribute("class","button1")
+//     var inputsubmit=document.createElement("input");
+//     inputsubmit.innerText="Continue";
+//     inputsubmit.setAttribute("type","submit")
+//     inputsubmit.setAttribute("id","continuebtn")
+//     inputsubmit.setAttribute("class","button1")
     
     
-     
+    
 
-    var underbuttontext=document.createElement("p")
-    underbuttontext.innerText="By clicking continue, you agree to our Privacy Policy";
+//     var underbuttontext=document.createElement("p")
+//     underbuttontext.innerText="By clicking continue, you agree to our Privacy Policy";
 
-    card.append(innercard,inputsubmit,underbuttontext)
-    document.querySelector("#newdis").append(card)
+//     card.append(heading,innercard,inputsubmit,underbuttontext)
+//     document.querySelector("#newdis").append(card)
+    
 
-    document.querySelector('#continuebtn').addEventListener("click",savelogin)
-    function savelogin(event){
-        event.preventDefault();
-     localStorage.setItem("checkLogin","Yes");
-    window.location.href="index.html"
-    // console.log("eeeee")
-    }
+//     document.querySelector('#continuebtn').addEventListener("click",savelogin)
+//     function savelogin(event){
+//         event.preventDefault();
+//      localStorage.setItem("checkLogin","Yes");
+//     window.location.href="index.html"
+//     // console.log("eeeee")
+//     }
 
-}
-let cross = document.querySelector(".close");
-cross.addEventListener("click",function(){
-    window.location.href = "index.html";
-});
+// }
+// let cross = document.querySelector(".close");
+// cross.addEventListener("click",function(){
+//     window.location.href = "index.html";
+// });
 // fhghjkhbkjcbkjcbcndk
 
 </script>

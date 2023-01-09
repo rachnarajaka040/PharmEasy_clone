@@ -14,33 +14,105 @@
 
     <!-- appling slick slider -->
     <!-- slick-theme.min.css -->
-    <link rel="stylesheet" href="slick-theme.css">
+    <link rel="stylesheet" href="../Styles/slick-theme.css">
     <!-- slick min.css -->
-     <link rel="stylesheet" href="slick.css">
+     <link rel="stylesheet" href="../Styles/slick.css">
 
     <!-- linking  index.css -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../Styles/index.css">
+    <!-- linking foooter css -->
+    <link rel="stylesheet" href="../Styles/footer.css">
     <!-- linking  header.css -->
-    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="../Header/header.css">
     <!-- linking  header.js -->
-    <script type="module" src="./index.js"> </script>
+    <script type="module" src="../Script/index.js"> </script>
+
 </head>
-<body>
+<body> 
     <header>
 
     </header>
 <main class="main-page"> 
     <h2 class="first-heading">What are you looking for?</h2>
 
+    <!-- login and Signup code -->
+    <div class="bg-login-model">
+        <div class="modal-contents">
+            <div class="in-up-modal">
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" />
+                </div>
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg" />
+                </div>
+
+            </div>
+
+            <div class="close">
+                <div>+</div>
+            </div>
+            <form id="loginform">
+                <h3>LOGIN</h3>
+                <label for="UsearEmail">Email</label><br />
+                <input class="input" id="UsearEmail" type="email" />
+                <label for="Usearpassword">Password</label><br />
+                <input class="input" id="UserPassword" type="password"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" /><br />
+
+                <button id="submit" class="submit">SIGN IN</button>
+            </form>
+            <br>
+            <button class="to-Sign-up" id="submit">CREATE ACCOUNT</button>
 
 
+            <form id="newdis">
+            </form>
+
+        </div>
+    </div>
+
+    <div class="bg-signup-modal">
+        <div class="modal-contents-sign-up">
+            <div class="in-up-modal-sign-up">
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" />
+                </div>
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg" />
+                </div>
+
+            </div>
+
+            <div class="close-sign-up">
+                <div>+</div>
+            </div>
+
+            <form id="Signupform">
+                <h3>CREATE ACCOUNT</h3>
+                <label for="UserFirstName">First Name</label><br />
+                <input class="input" id="UserFirstName_signup" type="text" />
+                <label for="UserLastName">Last Name</label><br />
+                <input class="input" id="UserLastName_signup" type="text" />
+                <label for="UsearEmail">Email</label><br />
+                <input class="input" id="UsearEmail_signup" type="email" />
+                <label for="UserPassword">Password</label><br />
+                <input class="input" id="UserPassword_signup" type="password"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" /><br />
+                <button id="submit-signup">CREATE</button>
+            </form>
+
+            <form id="newdis-signup">
+            </form>
+
+        </div>
+    </div>
 
 
     <section class="top-navbar-cards-section">
           <div class="top-navbar-slider" style="column-gap: 2rem;">
             <!-- 1.Medicine Card -->
             <div class="slide">
-                <a href="">
+                <a href="searchmed.html">
                     <div class="img">
                         <img src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=720x0" alt="Medicine">
                     </div>
@@ -683,7 +755,7 @@
         </div>
      </section>
 </main>
-
+<footer></footer>
 
 
 
@@ -694,6 +766,6 @@
      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" 
      crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
-    <script src="index.slickslider.js"></script>
+    <script src="../Script/index.slickslider.js"></script>
 </body>
 </html>

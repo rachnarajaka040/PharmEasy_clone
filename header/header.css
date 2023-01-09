@@ -6,6 +6,15 @@ body {
   color: #30363c;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  will-change: transform;
+  background-color: white;
+}
+
 .navbar {
   position: fixed;
   background-color: white;
@@ -164,6 +173,7 @@ summary {
 }
 .healthcare-div-right {
   padding: 1rem;
+  background-color: white;
 }
 
 .healthcare-div-left {

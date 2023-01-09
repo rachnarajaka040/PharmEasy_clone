@@ -9,6 +9,7 @@
     width: 100%;
     margin: auto;
     position: relative;
+    margin-top: 8%;
 }
 .div_pr_maincon>.div_pr_subcon1{
     
@@ -38,7 +39,12 @@
    width: 30%;
    
    position: fixed;
+   
    right: 20px;
+}
+footer{
+    position: absolute;
+    width: 100%;
 }
 .div_pr_card{
     display: flex;
@@ -123,6 +129,9 @@
     cursor: pointer;
     color: white;
 }
+.div_pr_details>div>div>button:hover{
+    background-color: #189a93;
+}
 .div_pr_details>div>div>.btninCart{
     background-color: #d9f2f0;
     color: #10847e;
@@ -148,6 +157,9 @@
     font-weight: 700;
     cursor: pointer;
 
+}
+.div_pr_subcon2>button:hover{
+    background-color: #043432;
 }
 
 
@@ -230,3 +242,102 @@
 
 
   }
+
+  #div_head_name{
+    justify-content: space-between;
+    display: flex;
+  }
+  #div_head_name>img{
+    background-color: #d8d3ce;
+      border-radius: 50%;
+      padding: 5px;
+      width: 20px;
+    
+  }
+
+  @media only screen and (max-width: 900px) and (min-width: 550px){
+    .div_pr_maincon{
+        display: block;
+        
+    }
+    .div_pr_maincon>.div_pr_subcon1{
+    
+        width: 80%;
+        margin: auto;
+       
+       
+    }
+
+    .div_pr_maincon>.div_pr_subcon3{
+    
+    
+        width: 80%;
+        
+        margin: auto;
+        margin-top: 20%;
+        
+        
+       
+        
+    
+    }
+
+    .div_pr_maincon>.div_pr_subcon2{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        right: 0;
+     }
+     footer{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) and (min-width: 0px){
+
+    footer{
+        display: none;
+    }
+    .div_pr_maincon{
+        display: block;
+        
+    }
+    .div_pr_maincon>.div_pr_subcon1{
+    
+        width: 80%;
+        margin: auto;
+       
+       
+    }
+
+    .div_pr_maincon>.div_pr_subcon3{
+    
+    
+        width: 80%;
+        
+        margin: auto;
+        margin-top: 40%;
+        
+        
+       
+        
+    
+    }
+
+    .div_pr_maincon>.div_pr_subcon2{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        right: 0;
+     }
+
+     .div_pr_details>div{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .div_pr_details>div>div>button{
+        width: 100%;
+    }
+
+}

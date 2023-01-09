@@ -1,3 +1,27 @@
+
+// importing header and footer
+import { navbar, menuSelector } from "../Header/header.js";
+import { footer } from "../Script/footer.js";
+// let Users = JSON.parse(localStorage.getItem("Users")) || [];
+
+addEventListener("load", () => {
+  document.querySelector("header").innerHTML = navbar();
+  document.querySelector("footer").innerHTML = footer();
+
+  let div = document.querySelectorAll(".healthcare-div-left-menuHeadings>span");
+  for (let i = 0; i < div.length; i++) {
+    const element = div[i];
+    element.addEventListener("click", menuSelector);
+  }
+  // document.querySelector(".log-in-link").addEventListener("click", () => {
+  //   document.querySelector(".bg-login-model").style.display = "flex";
+  // });
+});
+
+
+
+
+
 var cartarr = JSON.parse(localStorage.getItem("cartarr")) || [];
 
 function append(cartarr) {
@@ -173,6 +197,6 @@ document
 
 function toCheckoutPage() {
   if (cartarr.length > 0) {
-    window.location.href = "../payment/payment.html";
+    window.location.href = "../Pages/payment.html";
   }
 }

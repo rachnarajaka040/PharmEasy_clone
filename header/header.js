@@ -1,45 +1,60 @@
 function navbar() {
   return `<div class="navbar">
   <div class="upper">
-    <a href="#" class="logo"><img src="./assets/logo_big.svg" alt="Logo"></a>
+    <a href="./index.html" class="logo"
+      ><img src="../assets/logo_big.svg" alt="Logo"
+    /></a>
     <div class="search-bar">
       <div class="search-bar-container">
-        <img src="./assets/search_logo.png" alt="searchLogo">
-        <input type="text" class="search" placeholder="Search for Medicine and Healthcare items">
+        <img src="../assets/search_logo.png" alt="searchLogo" />
+        <input
+          type="text"
+          class="search"
+          placeholder="Search for Medicine and Healthcare items"
+        />
         <button class="search-btn">Search</button>
       </div>
     </div>
     <div class="link-section">
       <div class="log-in-link">
-        <a href="#">
-          <img src="./assets/login_logo.png" alt="login">
+        <a href="#" class="login-sidebar-link">
+          <img src="../assets/login_logo.png" alt="login" />
           <span>Hello, Log in</span>
         </a>
       </div>
       <div class="offers-link">
         <a href="#">
-          <img src="./assets/discount_logo.png" alt="discount">
+          <img src="../assets/discount_logo.png" alt="discount" />
           <span>Offers</span>
         </a>
       </div>
       <div class="cart-link">
-        <a href="#">
-          <img src="./assets/cart_logo.png" alt="cart">
+        <a href="./cart.html">
+          <img src="../assets/cart_logo.png" alt="cart" />
           <span>Cart</span>
         </a>
       </div>
     </div>
   </div>
-  <hr>
+  <hr />
   <div class="lower">
-    <a href="#">
-      <span>Medison</span>
+    <a href="./searchmed.html">
+      <span>Medicine</span>
     </a>
     <details>
       <summary>
         <span>Healthcare</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1px">
-          <path fill="currentColor" fill-rule="evenodd" d="M16.6 8.6L12 13.2 7.4 8.6 6 10l6 6 6-6z"></path>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="1px"
+        >
+          <path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M16.6 8.6L12 13.2 7.4 8.6 6 10l6 6 6-6z"
+          ></path>
         </svg>
       </summary>
       <div class="healthcare-div">
@@ -66,11 +81,6 @@ function navbar() {
               <div>
                 <p>Home Hygiene Essentials</p>
                 <span>All Home Hygiene Essentials</span>
-                <!-- <span>Surface Cleaners</span>
-                <span>Disposable Bags</span>
-                <span>Air Freshner</span>
-                <span>Toilet Seat Cover</span>
-                <span>Tissues</span> -->
               </div>
               <div>
                 <p>Masks</p>
@@ -99,9 +109,6 @@ function navbar() {
               <div>
                 <p>Toilet Essentials</p>
                 <span>All Toilet Essentials</span>
-                <!-- <span>Seat Covers</span>
-                <span>Toilet Cleaners</span>
-                <span>Tissues</span> -->
               </div>
               <div>
                 <p>Offers - Covid Essentials</p>
@@ -110,8 +117,6 @@ function navbar() {
               <div>
                 <p>Cold & Cough</p>
                 <span>All Cold & Cough</span>
-                <!-- <span>Nasal Spray</span>
-                <span>Cold & Cough Medicines</span> -->
               </div>
             </div>
             <div class="A102 menuItems">
@@ -247,7 +252,7 @@ function navbar() {
       <span>Health Blogs</span>
     </a>
   </div>
-  <hr>
+  <hr />
 </div>`;
 }
 
