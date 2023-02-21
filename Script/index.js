@@ -1,9 +1,7 @@
-import { navbar, menuSelector } from "../Header/header.js";
 import { footer } from "../Script/footer.js";
 let Users = JSON.parse(localStorage.getItem("Users")) || [];
 
 addEventListener("load", () => {
-  document.querySelector("header").innerHTML = navbar();
   document.querySelector("footer").innerHTML = footer();
 
   let div = document.querySelectorAll(".healthcare-div-left-menuHeadings>span");
@@ -13,14 +11,17 @@ addEventListener("load", () => {
   }
   document.querySelector(".log-in-link").addEventListener("click", () => {
     document.querySelector(".bg-login-model").style.display = "flex";
+    document.body.style.overflow = "hidden";
   });
 });
 
 
- // LogIn Function
+
+// LogIn Function
 
 document.querySelector(".close").addEventListener("click", function () {
   document.querySelector(".bg-login-model").style.display = "none";
+  document.body.style.overflow = "auto";
 });
 var log = false;
 document.querySelector("#loginform").addEventListener("submit", login);
@@ -29,12 +30,13 @@ function login() {
   let form = document.getElementById("loginform");
   let Email = form.UsearEmail.value;
   let Password = form.UserPassword.value;
-    console.log(Email, Password);
+  console.log(Email, Password);
   for (let i = 0; i < Users.length; i++) {
     if (Users[i].Email == Email && Users[i].Password == Password) {
       alert("login Successful!");
       localStorage.setItem("User", JSON.stringify(Users[i]));
       document.querySelector(".bg-login-model").style.display = "none";
+      document.body.style.overflow = "auto";
       log = true;
       break;
     }
@@ -54,6 +56,7 @@ document.querySelector(".to-Sign-up").addEventListener("click", movetoregister);
 
 document.querySelector(".close-sign-up").addEventListener("click", function () {
   document.querySelector(".bg-signup-modal").style.display = "none";
+  document.body.style.overflow = "auto";
 });
 
 document.querySelector("#Signupform").addEventListener("submit", register);
@@ -79,6 +82,21 @@ function register() {
     document.querySelector(".bg-login-model").style.display = "flex";
   } else {
     alert(" Please Enter All Information");
+  }
+}
+
+function menuSelector() {
+  let div = document.querySelectorAll(".menuItems");
+  console.log(event.target.className);
+
+  for (let i = 0; i < div.length; i++) {
+    const element = div[i];
+
+    if (event.target.className == element.classList[0]) {
+      element.classList.add("configFlexDisplay");
+    } else {
+      element.classList.remove("configFlexDisplay");
+    }
   }
 }
 

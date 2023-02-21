@@ -2,7 +2,7 @@
  /* inter 400 */
  /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap'); */
 
-*{
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -316,8 +316,8 @@
 }
  
 .New-Launches-section .parent .child2 .slider .slide-child1 span img {   
-    height:180px;
-    width: 130px;
+    height:150px;
+    width: 120px;
     padding: 24px 16px;
 } 
 .New-Launches-section .parent .child2 .slider .slide-child2 .first {

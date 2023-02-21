@@ -1,7 +1,7 @@
 function navbar() {
   return `<div class="navbar">
   <div class="upper">
-    <a href="./index.html" class="logo"
+    <a href="../index.html" class="logo"
       ><img src="../assets/logo_big.svg" alt="Logo"
     /></a>
     <div class="search-bar">

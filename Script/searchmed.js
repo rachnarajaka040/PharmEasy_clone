@@ -95,7 +95,7 @@ let div_btn_add_new = document.getElementById("div_btn_add_new");
 
 div_btn_add_new.addEventListener("click", () => {
   document.querySelector(".add_dt_modal_main").style.display = "block";
-  console.log("hii");
+  
 });
 
 let btnSaveAd = document.getElementById("btnSaveAd");
